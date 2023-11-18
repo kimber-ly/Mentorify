@@ -12,12 +12,16 @@ import java.util.ArrayList
 
 class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var register: Button
+    private lateinit var login: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding)
 
         register = findViewById(R.id.get_started_btn)
         register.setOnClickListener(this)
+
+        login = findViewById(R.id.already_have_acc_btn)
+        login.setOnClickListener(this)
 
         val fragmentManager = supportFragmentManager
         val paperOnboardingFragment = PaperOnboardingFragment.newInstance(getData())
@@ -67,6 +71,10 @@ class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
         when (v.id){
             R.id.get_started_btn -> {
                 val intent = Intent(this@OnboardingActivity, RegisterActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.already_have_acc_btn -> {
+                val intent = Intent(this@OnboardingActivity, LoginActivity::class.java)
                 startActivity(intent)
             }
         }
