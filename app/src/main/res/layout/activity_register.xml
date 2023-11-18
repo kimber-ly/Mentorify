@@ -117,6 +117,7 @@
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/text_field"
         app:hintEnabled="false"
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,6 +145,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:endIconMode="password_toggle"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout_password"
         app:startIconDrawable="@drawable/baseline_lock_24">
 
