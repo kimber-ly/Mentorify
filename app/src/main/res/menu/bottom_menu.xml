@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/navhome"/>
+    <item
+        android:id="@+id/bottom_mentor"
+        android:title="Mentor"
+        android:icon="@drawable/navmentor"/>
+    <item
+        android:id="@+id/bottom_chat"
+        android:title="Chat"
+        android:icon="@drawable/navqna"/>
+    <item
+        android:id="@+id/bottom_bookings"
+        android:title="Bookings"
+        android:icon="@drawable/navbokings"/>
+    <item
+        android:id="@+id/bottom_profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"/>
+
+</menu>

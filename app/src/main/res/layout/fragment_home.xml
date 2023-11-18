@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:src="@drawable/backgroundhome"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HI, Mohamad Dzikri "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have 1 upcoming session"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="65dp"/>
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="210dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/gambar_hai"/>
+        <ImageView
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="350dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/notification"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="100dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
