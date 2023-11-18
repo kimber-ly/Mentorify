@@ -10,7 +10,7 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/logo_mentorify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -21,10 +21,10 @@
         android:id="@+id/textInputLayout_fullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:hintEnabled="false"
-        android:background="@drawable/text_field"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_field"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,9 +159,10 @@
 
     <Button
         android:id="@+id/register_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/regular_button"
         android:paddingHorizontal="80dp"
         android:text="Register"
@@ -169,59 +170,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout_confirmPassword" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="atau"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_btn" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:text="atau"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/register_btn" />-->
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+<!--    <TableLayout-->
+<!--        android:id="@+id/tableLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView">-->
 
-        <TableRow>
+<!--        <TableRow>-->
 
-            <ImageView
-                android:paddingHorizontal="30dp"
-                android:src="@drawable/google" />
+<!--            <ImageView-->
+<!--                android:paddingHorizontal="30dp"-->
+<!--                android:src="@drawable/google" />-->
 
-            <ImageView
-                android:layout_height="match_parent"
-                android:paddingHorizontal="30dp"
-                android:src="@drawable/facebook" />
+<!--            <ImageView-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:paddingHorizontal="30dp"-->
+<!--                android:src="@drawable/facebook" />-->
 
-            <ImageView
-                android:paddingHorizontal="30dp"
-                android:src="@drawable/apple" />
-        </TableRow>
-    </TableLayout>
+<!--            <ImageView-->
+<!--                android:paddingHorizontal="30dp"-->
+<!--                android:src="@drawable/apple" />-->
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+<!--    <TableLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tableLayout">-->
 
-        <TableRow>
-            <TextView android:text="Already have an account?" />
-            <TextView
-                android:paddingHorizontal="10dp"
-                android:text="Login"
-                android:textColor="@color/md_theme_light_primary"
-                />
-        </TableRow>
+<!--        <TableRow>-->
+<!--            <TextView android:text="Already have an account?" />-->
+<!--            <TextView-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:text="Login"-->
+<!--                android:textColor="@color/md_theme_light_primary"-->
+<!--                />-->
+<!--        </TableRow>-->
 
-    </TableLayout>
+<!--    </TableLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
