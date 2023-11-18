@@ -5,7 +5,7 @@
             <solid android:color="@color/md_theme_light_background"/>
             <stroke
                 android:color="@color/md_theme_dark_onSurfaceVariant"
-                android:width="3dp"/>
+                android:width="2dp"/>
             <corners android:radius="16dp"/>
         </shape>
     </item>

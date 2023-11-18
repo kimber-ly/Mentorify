@@ -7,7 +7,7 @@
                     <solid android:color="@android:color/transparent" />
                     <stroke
                         android:color="@color/md_theme_light_primary"
-                        android:width="3dp" />
+                        android:width="2dp" />
                     <corners android:radius="20dp" />
                 </shape>
             </item>
@@ -21,7 +21,7 @@
             <solid android:color="@android:color/transparent" />
             <stroke
                 android:color="@color/md_theme_light_primary"
-                android:width="3dp" />
+                android:width="2dp" />
             <corners android:radius="20dp" />
         </shape>
     </item>
