@@ -2,4 +2,6 @@
     <string name="app_name">Mentorify</string>
     <string name="selamat_datang">Selamat Datang</string>
     <string name="onboarding_text_1">Selamat datang di Mentorify, tempat dimana pembelajaran menjadi sebuah perjalanan yang penuh inspirasi.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
