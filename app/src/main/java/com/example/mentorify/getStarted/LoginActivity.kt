@@ -1,7 +1,8 @@
-package com.example.mentorify
+package com.example.mentorify.getStarted
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mentorify.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

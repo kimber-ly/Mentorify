@@ -13,19 +13,22 @@
         android:theme="@style/Theme.Mentorify"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".getStarted.RegisterActivity2"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".getStarted.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".getStarted.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getStarted.OnboardingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".getStarted.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
