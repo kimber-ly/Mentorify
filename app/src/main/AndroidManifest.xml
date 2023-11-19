@@ -16,10 +16,10 @@
             android:name=".getStarted.RegisterActivity2"
             android:exported="false" />
         <activity
-            android:name=".getStarted.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".getStarted.RegisterActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".getStarted.OnboardingActivity"
