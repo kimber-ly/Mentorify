@@ -7,6 +7,10 @@ android {
     namespace = "com.example.mentorify"
     compileSdk = 33
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.mentorify"
         minSdk = 24
