@@ -647,7 +647,7 @@
                             android:layout_marginStart="30dp"
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/baseline_bookmark_24"/>
+                            android:src="@drawable/baseline_bookmark_border_24"/>
 
                     </LinearLayout>
 
@@ -759,7 +759,7 @@
                             android:layout_marginStart="25dp"
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/baseline_bookmark_24"/>
+                            android:src="@drawable/baseline_bookmark_border_24"/>
 
                     </LinearLayout>
 
@@ -879,7 +879,7 @@
                             android:layout_marginStart="25dp"
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/baseline_bookmark_24"/>
+                            android:src="@drawable/baseline_bookmark_border_24"/>
 
                     </LinearLayout>
 
@@ -991,7 +991,7 @@
                             android:layout_marginStart="55dp"
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/baseline_bookmark_24"/>
+                            android:src="@drawable/baseline_bookmark_border_24"/>
 
                     </LinearLayout>
 
