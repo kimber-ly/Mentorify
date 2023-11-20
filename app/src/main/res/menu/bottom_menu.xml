@@ -10,7 +10,7 @@
         android:icon="@drawable/navmentor"/>
     <item
         android:id="@+id/bottom_chat"
-        android:title="Chat"
+        android:title="QnA"
         android:icon="@drawable/navqna"/>
     <item
         android:id="@+id/bottom_bookings"
