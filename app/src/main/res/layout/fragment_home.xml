@@ -73,268 +73,409 @@
             android:textColor="@color/seed"
             android:text="See all"/>
 
-        <LinearLayout
+
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="530dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="255dp"
-                android:layout_height="300dp"
-                android:layout_marginStart="25dp"
-                app:cardCornerRadius="13dp"
-                android:layout_marginTop="210dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="530dp"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp"
-                    android:layout_margin="5dp">
-
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/carddzikri"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="255dp"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="210dp"
+                    app:cardCornerRadius="13dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
-                        <TextView
+                        <ImageView
+                            android:layout_width="240dp"
+                            android:layout_height="110dp"
+                            android:src="@drawable/card_orang1" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Siti Aulia"
+                                android:textSize="14sp"
+                                android:textStyle="bold|normal" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="120dp"
+                                android:layout_marginTop="7dp"
+                                android:src="@drawable/baseline_bookmark_24" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:layout_marginStart="7dp"
-                            android:textSize="14sp"
-                            android:text="Tommy Widjaja"
-                            android:textStyle="bold|normal"/>
+                            android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_marginTop="7dp"
-                            android:layout_marginStart="110dp"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/baseline_bookmark_24"/>
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="7dp"
+                                android:src="@drawable/icon_kerja" />
 
-                    </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Mentor Design"
+                                android:textSize="10sp" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
+                        </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/icon_kerja"
-                            android:layout_marginStart="7dp"/>
-
-                        <TextView
-                            android:layout_marginTop="5dp"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="User Behavior Expelener"
-                            android:textSize="10sp"
-                            android:layout_marginStart="10dp"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/icon_chat"
-                            android:layout_marginStart="7dp"/>
-
-                        <TextView
-                            android:layout_marginTop="5dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0 sessions (0 review)"
-                            android:textSize="10sp"
-                            android:layout_marginStart="10dp"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Rp. 50.000"
-                            android:textSize="12sp"
-                            android:textStyle="bold|normal"
-                            android:textColor="@color/seed"
-                            android:layout_marginStart="10dp"/>
-                        <ImageView
                             android:layout_marginTop="2dp"
-                            android:layout_width="14dp"
-                            android:layout_height="14dp"
-                            android:src="@drawable/icon_bintang"
-                            android:layout_marginStart="130dp"/>
-                        <TextView
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="7dp"
+                                android:src="@drawable/icon_chat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="0 sessions (0 review)"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="4.5"
-                            android:textSize="10sp"
-                            android:textStyle="normal|bold"
-                            android:layout_marginStart="3dp"/>
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Rp. 50.000"
+                                android:textColor="@color/seed"
+                                android:textSize="12sp"
+                                android:textStyle="bold|normal" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/icon_bintang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:text="4.5"
+                                android:textSize="10sp"
+                                android:textStyle="normal|bold" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="220dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Selengkapnya"
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 
-                    <Button
-                        android:layout_marginTop="10dp"
-                        android:layout_width="220dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:textSize="12sp"
-                        android:text="Selengkapnya"/>
+                </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="255dp"
-                android:layout_height="300dp"
-                android:layout_marginStart="25dp"
-                app:cardCornerRadius="13dp"
-                android:layout_marginTop="210dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp"
-                    android:layout_margin="5dp">
-
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="110dp"
-                        android:src="@drawable/carddzikri"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="255dp"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="210dp"
+                    app:cardCornerRadius="13dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
-                        <TextView
+                        <ImageView
+                            android:layout_width="240dp"
+                            android:layout_height="110dp"
+                            android:src="@drawable/carddzikri" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Dzikri Arfiansyah"
+                                android:textSize="14sp"
+                                android:textStyle="bold|normal" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="85dp"
+                                android:layout_marginTop="7dp"
+                                android:src="@drawable/baseline_bookmark_24" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:layout_marginStart="7dp"
-                            android:textSize="14sp"
-                            android:text="Tommy Widjaja"
-                            android:textStyle="bold|normal"/>
+                            android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_marginTop="7dp"
-                            android:layout_marginStart="110dp"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/baseline_bookmark_24"/>
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="7dp"
+                                android:src="@drawable/icon_kerja" />
 
-                    </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Mentor Teknik Industri"
+                                android:textSize="10sp" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
+                        </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/icon_kerja"
-                            android:layout_marginStart="7dp"/>
-
-                        <TextView
-                            android:layout_marginTop="5dp"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="User Behavior Expelener"
-                            android:textSize="10sp"
-                            android:layout_marginStart="10dp"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/icon_chat"
-                            android:layout_marginStart="7dp"/>
-
-                        <TextView
-                            android:layout_marginTop="5dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0 sessions (0 review)"
-                            android:textSize="10sp"
-                            android:layout_marginStart="10dp"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Rp. 50.000"
-                            android:textSize="12sp"
-                            android:textStyle="bold|normal"
-                            android:textColor="@color/seed"
-                            android:layout_marginStart="10dp"/>
-                        <ImageView
                             android:layout_marginTop="2dp"
-                            android:layout_width="14dp"
-                            android:layout_height="14dp"
-                            android:src="@drawable/icon_bintang"
-                            android:layout_marginStart="130dp"/>
-                        <TextView
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="7dp"
+                                android:src="@drawable/icon_chat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="11 sessions (17 review)"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="4.5"
-                            android:textSize="10sp"
-                            android:textStyle="normal|bold"
-                            android:layout_marginStart="3dp"/>
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Rp. 50.000"
+                                android:textColor="@color/seed"
+                                android:textSize="12sp"
+                                android:textStyle="bold|normal" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginStart="120dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/icon_bintang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:text="4.5"
+                                android:textSize="10sp"
+                                android:textStyle="normal|bold" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="220dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Selengkapnya"
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 
-                    <Button
-                        android:layout_marginTop="10dp"
-                        android:layout_width="220dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:textSize="12sp"
-                        android:text="Selengkapnya"/>
+                </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="255dp"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="210dp"
+                    app:cardCornerRadius="13dp">
 
-            </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
-        </LinearLayout>
+                        <ImageView
+                            android:layout_width="240dp"
+                            android:layout_height="110dp"
+                            android:src="@drawable/card_orang4" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Faza Atmoro"
+                                android:textSize="14sp"
+                                android:textStyle="bold|normal" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="90dp"
+                                android:layout_marginTop="7dp"
+                                android:src="@drawable/baseline_bookmark_24" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="7dp"
+                                android:src="@drawable/icon_kerja" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Mentor Coding"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="7dp"
+                                android:src="@drawable/icon_chat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="11 sessions (17 review)"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Rp. 50.000"
+                                android:textColor="@color/seed"
+                                android:textSize="12sp"
+                                android:textStyle="bold|normal" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/icon_bintang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:text="4.5"
+                                android:textSize="10sp"
+                                android:textStyle="normal|bold" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="220dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Selengkapnya"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -488,7 +629,7 @@
                     <ImageView
                         android:layout_width="140dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/carddzikri"/>
+                        android:src="@drawable/card_orang5"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -499,11 +640,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dzikri Arfiansyah"
+                            android:text="Al Ikhsan Akbar"
                             android:textSize="12sp"
                             android:textStyle="bold|normal"/>
                         <ImageView
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="30dp"
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:src="@drawable/baseline_bookmark_24"/>
@@ -525,7 +666,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="User Behavior Expelener"
+                            android:text="Mentor Coding"
                             android:textSize="10sp"
                             android:layout_marginStart="5dp"/>
 
@@ -600,7 +741,7 @@
                     <ImageView
                         android:layout_width="140dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/carddzikri"/>
+                        android:src="@drawable/card_orang3"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -611,7 +752,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dzikri Arfiansyah"
+                            android:text="Intan Nurjannah"
                             android:textSize="12sp"
                             android:textStyle="bold|normal"/>
                         <ImageView
@@ -637,7 +778,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="User Behavior Expelener"
+                            android:text="Mentor Markting"
                             android:textSize="10sp"
                             android:layout_marginStart="5dp"/>
 
@@ -720,7 +861,7 @@
                     <ImageView
                         android:layout_width="140dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/carddzikri"/>
+                        android:src="@drawable/card_orang6"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -731,7 +872,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dzikri Arfiansyah"
+                            android:text="Sambas Purnama"
                             android:textSize="12sp"
                             android:textStyle="bold|normal"/>
                         <ImageView
@@ -832,7 +973,7 @@
                     <ImageView
                         android:layout_width="140dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/carddzikri"/>
+                        android:src="@drawable/card_orang7"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -843,11 +984,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dzikri Arfiansyah"
+                            android:text="Putri Alifia"
                             android:textSize="12sp"
                             android:textStyle="bold|normal"/>
                         <ImageView
-                            android:layout_marginStart="25dp"
+                            android:layout_marginStart="55dp"
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:src="@drawable/baseline_bookmark_24"/>
