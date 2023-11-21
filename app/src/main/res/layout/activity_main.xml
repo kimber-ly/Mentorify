@@ -18,6 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="labeled"
         android:background="@drawable/navbar"
         app:itemIconTint="@color/white"
         app:itemActiveIndicatorStyle="@color/md_theme_light_primary"
