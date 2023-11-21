@@ -1,11 +1,11 @@
 package com.example.mentorify
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import com.example.mentorify.R
+import androidx.appcompat.app.AppCompatActivity
+import com.example.mentorify.getStarted.RegisterActivity2
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,8 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         if (v != null) {
             when (v.id) {
                 R.id.register_btn -> {
-                    val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+                    val intent = Intent(this@RegisterActivity,
+                        RegisterActivity2::class.java)
                     startActivity(intent)
                 }
             }

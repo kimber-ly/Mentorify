@@ -1,12 +1,45 @@
 package com.example.mentorify.getStarted
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.mentorify.MainActivity
 import com.example.mentorify.R
 
 class RegisterActivity2 : AppCompatActivity() {
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var startTopic: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register2)
+
+        recyclerView = findViewById(R.id.recyclerView_choose_topic)
+        val topicData = insertData()
+        val adapter = TopicAdapter(topicData)
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = GridLayoutManager(this, 3)
+
+        startTopic = findViewById(R.id.start_topic_btn)
+        startTopic.setOnClickListener {
+            val intent = Intent(this@RegisterActivity2, MainActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun insertData(): List<ChooseTopic> {
+        return listOf(
+            ChooseTopic(topicImg = R.drawable.icon_teknikindustri, topicName = "Teknik Industri"),
+            ChooseTopic(topicImg = R.drawable.icon_coding, topicName = "Coding"),
+            ChooseTopic(topicImg = R.drawable.icon_marketing, topicName = "Marketing"),
+            ChooseTopic(topicImg = R.drawable.data_science, topicName = "Data Science"),
+            ChooseTopic(topicImg = R.drawable.icon_teknikindustri, topicName = "Teknik Industri"),
+            ChooseTopic(topicImg = R.drawable.icon_coding, topicName = "Coding"),
+            ChooseTopic(topicImg = R.drawable.icon_marketing, topicName = "Marketing"),
+            ChooseTopic(topicImg = R.drawable.icon_teknikindustri, topicName = "Teknik Industri"),
+            ChooseTopic(topicImg = R.drawable.icon_coding, topicName = "Coding"),
+        )
     }
 }
