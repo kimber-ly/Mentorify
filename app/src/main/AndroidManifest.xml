@@ -16,6 +16,9 @@
             android:name=".ReviewActivity"
             android:exported="false" />
         <activity
+            android:name=".Utils.SearchPageSection"
+            android:exported="false" />
+        <activity
             android:name=".OverviewActivity"
             android:exported="false" />
         <activity
