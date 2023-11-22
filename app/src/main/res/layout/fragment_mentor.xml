@@ -26,8 +26,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation">
+        android:layout_height="650dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -36,7 +35,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/layout_satu">
 
                 <com.google.android.material.search.SearchBar
@@ -79,7 +78,7 @@
 
                 <Button
                     android:layout_width="160dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="0dp"
                     android:layout_marginStart="0dp"
@@ -91,7 +90,7 @@
 
                 <Button
                     android:layout_width="160dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="0dp"
                     android:layout_marginStart="25dp"
