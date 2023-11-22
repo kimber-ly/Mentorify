@@ -10,22 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frame_container"/>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttom_navigation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_menu"
-        app:labelVisibilityMode="labeled"
-        android:background="@drawable/navbar"
-        app:itemIconTint="@color/white"
-        app:itemActiveIndicatorStyle="@color/md_theme_light_primary"
-        app:itemTextColor="@color/white"/>
-
     <ScrollView
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="650dp">
 
         <RelativeLayout
