@@ -219,6 +219,7 @@
         <TableRow>
             <TextView android:text="Already have an account?" />
             <TextView
+                android:id="@+id/to_login_txt"
                 android:paddingHorizontal="10dp"
                 android:text="Login"
                 android:textColor="@color/md_theme_light_primary"
