@@ -7,4 +7,29 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cari_mentor">Cari mentor</string>
+    <string name="mentorship_session_with">Mentorship session with</string>
+
+    <string-array name="mentor_name">
+        <item>Irfan Wahendra</item>
+        <item>Kimberly</item>
+        <item>Ikhsan</item>
+        <item>Dzikri</item>
+        <item>Faza</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>Sabtu, 18 November 2023</item>
+        <item>Sabtu, 17 November 2023</item>
+        <item>Sabtu, 12 November 2023</item>
+        <item>Sabtu, 20 November 2023</item>
+        <item>Sabtu, 30 November 2023</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>12.00 - 12.30 WIB</item>
+        <item>12.30 - 13.00 WIB</item>
+        <item>13.00 - 13.30 WIB</item>
+        <item>13.30 - 14.00 WIB</item>
+        <item>14.00 - 14.30 WIB</item>
+    </string-array>
 </resources>

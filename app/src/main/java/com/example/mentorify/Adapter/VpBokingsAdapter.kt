@@ -1,4 +1,4 @@
-package com.example.mentorify
+package com.example.mentorify.Adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

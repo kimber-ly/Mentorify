@@ -29,17 +29,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mentorship session with"
+                android:text="@string/mentorship_session_with"
                 android:textSize="12sp"
                 android:textStyle="normal" />
+
             <TextView
-                android:id="@+id/mentor_card_history"
+                android:id="@+id/mentor_history_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Irfan Wahendra"
                 android:layout_marginStart="4dp"
-                android:textSize="12sp"
+                android:text="Irfan Wahendra"
                 android:textColor="@color/md_theme_light_primary"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -51,16 +52,16 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:src="@drawable/date_outline_24"/>
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/date_outline_24" />
 
             <TextView
-                android:id="@+id/history_date"
+                android:id="@+id/date_history"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="4dp"
                 android:text="Sabtu, 18 November 2023"
                 android:textSize="12sp" />
 
@@ -73,32 +74,35 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/clock_outline_24" />
 
             <TextView
+                android:id="@+id/time_history"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
-                android:text="16.00 - 16.30 WIB"
+                android:layout_marginTop="4dp"
+                android:text="12.00 - 13.00 WIB"
                 android:textSize="12sp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:orientation="horizontal">
-            <Button
-                android:id="@+id/btn_detail_history"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@drawable/regular_button"
-                android:text="Detail"
-                android:textColor="@color/white" />
 
+            <Button
+                android:id="@+id/btn_detail"
+                android:layout_width="120dp"
+                android:layout_height="38dp"
+                android:textSize="12sp"
+                android:background="@drawable/outlined_button"
+                android:text="Detail"
+                android:textColor="@color/md_theme_light_primary" />
         </LinearLayout>
 
     </LinearLayout>
