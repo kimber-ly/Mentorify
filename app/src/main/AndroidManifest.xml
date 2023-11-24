@@ -16,6 +16,15 @@
             android:name=".DetailsHistoryActivity"
             android:exported="false" />
         <activity
+            android:name=".getStarted.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".getStarted.ForgetPassword2"
+            android:exported="false" />
+        <activity
+            android:name=".getStarted.ForgetPassword"
+            android:exported="false" />
+        <activity
             android:name=".ReviewActivity"
             android:exported="false" />
         <activity

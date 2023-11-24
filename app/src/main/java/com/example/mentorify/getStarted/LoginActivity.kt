@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mentorify.getStarted.ForgetPassword
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,9 +15,11 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnLogin: Button = findViewById(R.id.login_btn)
         val toRegister: TextView = findViewById(R.id.to_register_txt)
+        val forgetPasswordTxt: TextView = findViewById(R.id.forgetPassword_txt)
 
         btnLogin.setOnClickListener(this)
         toRegister.setOnClickListener(this)
+        forgetPasswordTxt.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -29,6 +32,11 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.to_register_txt -> {
                     val intent = Intent(this@LoginActivity,
                         RegisterActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.forgetPassword_txt -> {
+                    val intent = Intent(this@LoginActivity,
+                        ForgetPassword::class.java)
                     startActivity(intent)
                 }
             }
