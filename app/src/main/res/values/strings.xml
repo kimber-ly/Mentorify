@@ -3,8 +3,38 @@
     <string name="selamat_datang">Selamat Datang</string>
     <string name="onboarding_text_1">Selamat datang di Mentorify, tempat dimana pembelajaran menjadi sebuah perjalanan yang penuh inspirasi.</string>
     <string name="about">Seorang Mahasiswa Teknik Informatika dengan pengalaman\nlebih dari 2 tahun dalam. Dengan pendekatan yang empatik\ndan berdasarkan pengalaman</string>
+    <string name="review2">I just had my first mentorship meeting and found it very\ninformative. The mentor is very friendly and a good\ncommunicator. I also found his interview tips very useful.</string>
     <string name="review1">Nyaman banget diskusi sama Kak Tommy, bisa kasih\npenjelasan tentang pros dan cons yang mau\nditanyain</string>
+    <string name="review3">I always get something new to think about when I talk to\nhim he is a very professional and friendly person.\nTalk about workload analysis and performance management</string>
+    <string name="item_menu">Dropdownmenu</string>
+    <string name="message">Include your problem topic</string>
+    <string name="item_label">Items</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cari_mentor">Cari mentor</string>
+    <string name="mentorship_session_with">Mentorship session with</string>
+
+    <string-array name="mentor_name">
+        <item>Irfan Wahendra</item>
+        <item>Kimberly</item>
+        <item>Ikhsan</item>
+        <item>Dzikri</item>
+        <item>Faza</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>Sabtu, 18 November 2023</item>
+        <item>Sabtu, 17 November 2023</item>
+        <item>Sabtu, 12 November 2023</item>
+        <item>Sabtu, 20 November 2023</item>
+        <item>Sabtu, 30 November 2023</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>12.00 - 12.30 WIB</item>
+        <item>12.30 - 13.00 WIB</item>
+        <item>13.00 - 13.30 WIB</item>
+        <item>13.30 - 14.00 WIB</item>
+        <item>14.00 - 14.30 WIB</item>
+    </string-array>
 </resources>

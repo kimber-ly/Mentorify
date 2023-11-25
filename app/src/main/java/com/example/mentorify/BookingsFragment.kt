@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.mentorify.Adapter.vpBokingsAdapter
 import com.example.mentorify.databinding.FragmentBookingsBinding
 
 class BookingsFragment : Fragment() {

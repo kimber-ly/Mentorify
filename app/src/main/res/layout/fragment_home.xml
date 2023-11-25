@@ -47,7 +47,7 @@
             android:layout_marginStart="350dp"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/notification"/>
+            android:src="@drawable/notification_outline_putihdz"/>
 
         <com.google.android.material.search.SearchBar
             android:id="@+id/search_barHome"
