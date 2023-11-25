@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="5dp"
-        android:background="@drawable/back_btn_ripple">
+        android:background="@drawable/category_list_searchpage_ripple">
 
 
         <ImageView

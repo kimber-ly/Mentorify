@@ -3,6 +3,7 @@ package com.example.mentorify.Utils
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Adapter.KategoriSearchPage
@@ -21,6 +22,12 @@ class SearchPageSection : AppCompatActivity() {
 
         val list_kategori = findViewById<RecyclerView>(R.id.list_kategori_searchpage)
         list_kategori.adapter = KategoriSearchItems
+
+        val backBtn = findViewById<ImageView>(R.id.back_btn_searchpage)
+        backBtn.setOnClickListener {
+            Toast.makeText(this@SearchPageSection, "test!", Toast.LENGTH_LONG).show()
+        }
+
     }
 
     private val PopulerSearchItems by lazy {
