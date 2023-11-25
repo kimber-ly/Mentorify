@@ -1,208 +1,359 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ReviewActivity">
 
-    <androidx.cardview.widget.CardView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_backReview"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableRight="@drawable/baseline_keyboard_arrow_left_24"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="120dp"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_bookmark_border_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="90dp"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_chat"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/tommypoto"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Tommy Widjaja"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="230dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Development"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="255dp"/>
+
+        <RadioGroup
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="285dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/radio_bg"
+            android:gravity="center"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btn_backReview"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="10dp"
-                android:drawableRight="@drawable/baseline_keyboard_arrow_left_24"
-                android:backgroundTint="@color/white"/>
+            <RadioButton
+                android:id="@+id/btn_Overview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Overview"
+                android:textColor="@color/radio_text_color"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/btn_Review2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Review"
+                android:textColor="@color/radio_text_color"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_marginTop="340dp"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_secret"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="360dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profile"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="120dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/baseline_bookmark_border_24"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="90dp"/>
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/icon_chat"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"/>
+                android:text="November 12, 2023"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:layout_marginStart="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="@string/review1"
+                android:layout_marginStart="25dp"/>
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="435dp">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="340dp"
-        android:scaleType="fitXY"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/tommypoto"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/circular_dz2"
+                android:layout_marginStart="25dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tommy Widjaja"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="230dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Android Development"
-        android:textSize="12sp"
-        android:textStyle="normal"
-        android:textColor="@color/white"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="255dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:text="John Doe"/>
 
-    <RadioGroup
-        android:layout_width="340dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="285dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/radio_bg"
-        android:gravity="center"
-        android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp"
+                    android:text="Student at Institut Teknologi Bandung"/>
 
-        <RadioButton
-            android:id="@+id/btn_Overview2"
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="485dp"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:background="@color/md_theme_light_secondaryContainer"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/radio_selector"
-            android:button="@android:color/transparent"
-            android:checked="false"
-            android:gravity="center"
-            android:text="Overview"
-            android:textColor="@color/radio_text_color"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:orientation="vertical"
+            android:layout_marginTop="500dp">
 
-        <RadioButton
-            android:id="@+id/btn_Review2"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="November 1, 2023"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:layout_marginStart="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="@string/review2"
+                android:layout_marginStart="25dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="580dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/circular_dz"
+                android:layout_marginStart="25dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:text="Udema Umana"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp"
+                    android:text="Student at Bina Sarana University"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="635dp"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:background="@color/md_theme_light_secondaryContainer"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/radio_selector"
-            android:button="@android:color/transparent"
-            android:checked="true"
-            android:gravity="center"
-            android:text="Review"
-            android:textColor="@color/radio_text_color"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:orientation="vertical"
+            android:layout_marginTop="645dp">
 
-    </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="August 17, 2023"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:layout_marginStart="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="@string/review3"
+                android:layout_marginStart="25dp"/>
 
-    <ImageView
-        android:layout_marginTop="340dp"
-        android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/background_secretprofile"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="360dp">
+        </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="November 12, 2023"
-            android:textSize="10sp"
-            android:textStyle="normal"
-            android:layout_marginStart="25dp"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="720dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/circular_dz3"
+                android:layout_marginStart="25dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:text="Emir Thoric"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp"
+                    android:text="Student at Ankara University"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="770dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/md_theme_light_secondaryContainer"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="normal"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:text="@string/review1"
-            android:layout_marginStart="25dp"/>
-        <ImageView
-            android:layout_marginTop="10dp"
-            android:layout_width="220dp"
-            android:layout_height="40dp"
-            android:src="@drawable/contoh_review1"
-            android:layout_marginStart="25dp"/>
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="773dp">
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btn_checkReview"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Check Availibility"
+                android:layout_marginStart="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
 
-    <View
-        android:layout_marginTop="490dp"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:background="@color/md_theme_light_secondaryContainer"/>
+        </LinearLayout>
 
-    <View
-        android:layout_marginTop="640dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/md_theme_light_secondaryContainer"/>
+    </RelativeLayout>
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="643dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Free Boking"
-            android:textSize="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rp. 50.000"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-        <Button
-            android:id="@+id/btn_checkReview"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:text="Check Availibility"
-            android:layout_marginStart="15dp"
-            android:textSize="14sp"
-            android:textColor="@color/white"/>
-
-    </LinearLayout>
-
-
-
-
-</FrameLayout>
+</ScrollView>
