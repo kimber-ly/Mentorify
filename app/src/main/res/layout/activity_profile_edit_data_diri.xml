@@ -84,10 +84,12 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="26dp"
+        android:textSize="14sp"
         android:padding="10dp"
         android:background="@drawable/et_background_datadiri"
         android:hint="dd/mm/yyyy"
-        android:drawableEnd=""
+        android:drawableEnd="@drawable/date_icon"
+        android:paddingEnd="18dp"
         android:elevation="6dp"
         app:layout_constraintTop_toBottomOf="@id/tv_date_datadiripage"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,20 +110,18 @@
 
         />
 
-    <EditText
+    <Spinner
         android:id="@+id/et_gender_datadiripage"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        android:padding="10dp"
-        android:background="@drawable/et_background_datadiri"
-        android:hint="Perempuan/Laki-laki"
-        android:textSize="14sp"
-        android:elevation="6dp"
         app:layout_constraintTop_toBottomOf="@id/tv_gender_datadiripage"
         app:layout_constraintStart_toStartOf="@id/tv_gender_datadiripage"
         app:layout_constraintEnd_toEndOf="parent"
+        android:spinnerMode="dropdown"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/ThemeOverlay.AppCompat.Light"
         />
     <TextView
         android:id="@+id/tv_no_datadiripage"
@@ -213,6 +213,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Simpan Perubahan"
+        android:background="@drawable/regular_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

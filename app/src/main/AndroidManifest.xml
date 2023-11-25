@@ -16,6 +16,9 @@
             android:name=".AvaibilityCheckActivity"
             android:exported="false" />
         <activity
+            android:name=".Profile_EditDataDiri"
+            android:exported="false" />
+        <activity
             android:name=".DetailsHistoryActivity"
             android:exported="false" />
         <activity
