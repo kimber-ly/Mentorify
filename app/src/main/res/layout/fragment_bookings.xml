@@ -22,17 +22,13 @@
 
                 <com.google.android.material.search.SearchBar
                     android:id="@+id/search_bar"
-                    android:layout_width="328dp"
+                    android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:hint="@string/cari_mentor"
                     android:backgroundTint="@color/white"
                     app:autoShowKeyboard="true"
                     android:outlineSpotShadowColor="@color/md_theme_light_outline"/>
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="fill_parent"
-                    android:src="@drawable/notification_outline_24" />
             </LinearLayout>
 
             <View
