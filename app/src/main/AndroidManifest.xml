@@ -19,6 +19,15 @@
             android:name=".Profile_SavedMentor"
             android:exported="false" />
         <activity
+            android:name=".UpcomingDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendingBookingDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryBookingDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".AvaibilityCheckActivity"
             android:exported="false" />
         <activity
