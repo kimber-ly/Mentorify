@@ -10,27 +10,30 @@ import android.widget.Button
 import android.widget.LinearLayout
 import com.example.mentorify.Utils.SearchPageSection
 
-class ProfileFragment : Fragment(), View.OnClickListener {
-
+class ProfileFragment : Fragment() {
+    private lateinit var btnEditProfile : LinearLayout
+    private lateinit var btnSavedMentor : LinearLayout
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
-    }
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-        val btn: LinearLayout = view.findViewById(R.id.datadiri_btn_profile)
-        btn.setOnClickListener(this)
-    }
-
-    override fun onClick(v: View?) {
-        if (v?.id == R.id.datadiri_btn_profile){
-            val int = Intent(requireActivity(), Profile_EditDataDiri::class.java)
-            startActivity(int)
+        //<----- intent edit profile ----->
+        btnEditProfile = view.findViewById(R.id.datadiri_btn_profile)
+        btnEditProfile.setOnClickListener {
+            startActivity(Intent(requireActivity(), Profile_EditDataDiri::class.java))
         }
+
+
+        //<----- intent saved mentor ----->
+        btnSavedMentor = view.findViewById(R.id.saved_btn_profile)
+        btnSavedMentor.setOnClickListener {
+            startActivity(Intent(requireActivity(), Profile_SavedMentor::class.java))
+        }
+
+        return view
     }
 }
