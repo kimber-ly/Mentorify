@@ -31,15 +31,15 @@ class RegisterActivity2 : AppCompatActivity() {
 
     private fun insertData(): List<ChooseTopic> {
         return listOf(
-            ChooseTopic(topicImg = R.drawable.icon_teknikindustri, topicName = "Teknik Industri"),
-            ChooseTopic(topicImg = R.drawable.icon_coding, topicName = "Coding"),
-            ChooseTopic(topicImg = R.drawable.icon_marketing, topicName = "Marketing"),
             ChooseTopic(topicImg = R.drawable.data_science, topicName = "Data Science"),
-            ChooseTopic(topicImg = R.drawable.icon_teknikindustri, topicName = "Teknik Industri"),
-            ChooseTopic(topicImg = R.drawable.icon_coding, topicName = "Coding"),
-            ChooseTopic(topicImg = R.drawable.icon_marketing, topicName = "Marketing"),
-            ChooseTopic(topicImg = R.drawable.icon_teknikindustri, topicName = "Teknik Industri"),
-            ChooseTopic(topicImg = R.drawable.icon_coding, topicName = "Coding"),
+            ChooseTopic(topicImg = R.drawable.teknik_industri, topicName = "Teknik Industri"),
+            ChooseTopic(topicImg = R.drawable.management, topicName = "Management"),
+            ChooseTopic(topicImg = R.drawable.coding, topicName = "Coding"),
+            ChooseTopic(topicImg = R.drawable.design, topicName = "Design"),
+            ChooseTopic(topicImg = R.drawable.marketing, topicName = "Marketing"),
+            ChooseTopic(topicImg = R.drawable.sistem_informasi, topicName = "Sistem Informasi"),
+            ChooseTopic(topicImg = R.drawable.bisnis_digital, topicName = "Bisnis Digital"),
+            ChooseTopic(topicImg = R.drawable.medical, topicName = "Medical"),
         )
     }
 }

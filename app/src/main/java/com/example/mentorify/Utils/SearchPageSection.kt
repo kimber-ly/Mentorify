@@ -1,10 +1,9 @@
 package com.example.mentorify.Utils
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Adapter.KategoriSearchPage
 import com.example.mentorify.Adapter.PopulerSearchPage
@@ -33,7 +32,7 @@ class SearchPageSection : AppCompatActivity() {
     private val PopulerSearchItems by lazy {
 
         val items = listOf<SearchPagePopularModel>(
-            SearchPagePopularModel("Programming"),
+            SearchPagePopularModel("Coding"),
             SearchPagePopularModel("UI/UX"),
             SearchPagePopularModel("Java"),
             SearchPagePopularModel("Bisnis"),
@@ -54,10 +53,10 @@ class SearchPageSection : AppCompatActivity() {
     private val KategoriSearchItems by lazy {
 
         val items = listOf<SearchPageKategoriModel>(
-            SearchPageKategoriModel(R.drawable.icon_coding, "Programming", R.drawable.arrow),
-            SearchPageKategoriModel(R.drawable.icon_teknikindustri, "Teknik Industri", R.drawable.arrow),
-            SearchPageKategoriModel(R.drawable.icon_datascience, "Data Sciense", R.drawable.arrow),
-            SearchPageKategoriModel(R.drawable.icon_marketing, "Digiral Marketing", R.drawable.arrow),
+            SearchPageKategoriModel(R.drawable.coding, "Coding", R.drawable.arrow),
+            SearchPageKategoriModel(R.drawable.teknik_industri, "Teknik Industri", R.drawable.arrow),
+            SearchPageKategoriModel(R.drawable.data_science, "Data Science", R.drawable.arrow),
+            SearchPageKategoriModel(R.drawable.marketing, "Digital Marketing", R.drawable.arrow),
         )
 
         KategoriSearchPage(items, object : KategoriSearchPage.AdapterListener{

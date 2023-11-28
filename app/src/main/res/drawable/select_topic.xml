@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/md_theme_light_primary" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+<!--    &lt;!&ndash; Default state &ndash;&gt;-->
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <solid android:color="@android:color/white" />-->
+<!--            <corners android:radius="10dp" />-->
+<!--        </shape>-->
+<!--    </item>-->
+</selector>
