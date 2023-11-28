@@ -95,6 +95,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_meetNow"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:textSize="12sp"

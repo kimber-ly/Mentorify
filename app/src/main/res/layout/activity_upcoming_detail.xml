@@ -18,6 +18,7 @@
             android:padding="16dp">
 
             <ImageView
+                android:id="@+id/btn_backUpcoming"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center"
@@ -239,6 +240,7 @@
         android:background="@color/white">
 
         <Button
+            android:id="@+id/btn_meetNow"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_gravity="bottom"

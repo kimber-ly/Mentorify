@@ -1,6 +1,7 @@
 package com.example.mentorify.Adapter
 
 import android.content.Intent
+import android.net.Uri
 import android.service.autofill.Dataset
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,7 @@ class UpcomingBookingAdapter(private val dataset: ArrayList<HistoryBookingDataCl
         val datePending: TextView = view.findViewById(R.id.date)
         val timePending: TextView = view.findViewById(R.id.time)
         val btnDetail: Button = view.findViewById(R.id.btn_detail)
+        val btnMeetNow: Button = view.findViewById(R.id.btn_meetNow)
 
         init {
             btnDetail.setOnClickListener {
@@ -33,6 +35,23 @@ class UpcomingBookingAdapter(private val dataset: ArrayList<HistoryBookingDataCl
                 val intent = Intent(view.context, OverviewActivity::class.java)
                 view.context.startActivity(intent)
             }
+
+            btnMeetNow.setOnClickListener{
+                //Isi disini
+                val googleMeetUri = "https://meet.google.com/"
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(googleMeetUri))
+                if (intent.resolveActivity(view.context.packageManager) != null) {
+                    view.context.startActivity(intent)
+                } else {
+                    // Jika tidak ada aplikasi yang dapat menangani intent, buka browser
+                    val browserIntent = Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://meet.google.com/")
+                    )
+                    view.context.startActivity(browserIntent)
+                }
+            }
+
 
         }
     }
