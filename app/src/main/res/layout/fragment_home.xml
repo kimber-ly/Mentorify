@@ -71,7 +71,7 @@
             android:layout_marginTop="175dp"/>
 
         <TextView
-            android:id="@+id/btn_seeall"
+            android:id="@+id/btn_seeall_popular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="175dp"
@@ -632,6 +632,7 @@
                 android:layout_marginStart="25dp"/>
 
             <TextView
+                android:id="@+id/seeall_topic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="225dp"
@@ -651,7 +652,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="5dp"
-                android:src="@drawable/icon_teknikindustri"/>
+                android:src="@drawable/icon_industri_dz"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -672,7 +673,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="3dp"
-                android:src="@drawable/icon_coding"/>
+                android:src="@drawable/icon_coding_dz"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -693,7 +694,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/icon_marketing"/>
+                android:src="@drawable/icon_marketing_dz"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -713,13 +714,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_marginStart="5dp"
-                android:src="@drawable/icon_teknikindustri"/>
+                android:layout_marginStart="15dp"
+                android:src="@drawable/icon_sisteminf_dz"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Industri"
+                android:text="S. Informasi"
                 android:textSize="10sp"/>
 
         </LinearLayout>
@@ -821,13 +822,13 @@
                         <ImageView
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/icon_bintang"/>
+                            android:src="@drawable/icon_chat"/>
 
                         <TextView
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Mentor"
+                            android:text="5 sessions (0 review)"
                             android:textSize="10sp"
                             android:layout_marginStart="5dp"/>
 
@@ -933,13 +934,13 @@
                         <ImageView
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/icon_bintang"/>
+                            android:src="@drawable/icon_chat"/>
 
                         <TextView
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Mentor"
+                            android:text="2 sessions (0 review)"
                             android:textSize="10sp"
                             android:layout_marginStart="5dp"/>
 
@@ -1053,13 +1054,13 @@
                         <ImageView
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/icon_bintang"/>
+                            android:src="@drawable/icon_chat"/>
 
                         <TextView
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Mentor"
+                            android:text="0 sessions (0 review)"
                             android:textSize="10sp"
                             android:layout_marginStart="5dp"/>
 
@@ -1165,13 +1166,13 @@
                         <ImageView
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/icon_bintang"/>
+                            android:src="@drawable/icon_chat"/>
 
                         <TextView
                             android:layout_marginTop="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Mentor"
+                            android:text="0 sessions (0 review)"
                             android:textSize="10sp"
                             android:layout_marginStart="5dp"/>
 
@@ -1210,9 +1211,6 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
-
-
 
     </RelativeLayout>
 

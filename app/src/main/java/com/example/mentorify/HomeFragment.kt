@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
+import com.example.mentorify.Utils.SearchPageSection
 
 class HomeFragment : Fragment(), View.OnClickListener {
 
@@ -23,11 +25,18 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
         val btnsiti: Button = view.findViewById(R.id.btn_selengkapnyasiti)
         btnsiti.setOnClickListener(this)
+
+        val btndzik: TextView = view.findViewById(R.id.seeall_topic)
+        btndzik.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.btn_selengkapnyasiti){
             val int = Intent(activity, OverviewActivity::class.java)
+            startActivity(int)
+        }
+        if (v?.id == R.id.seeall_topic){
+            val int = Intent(activity, SearchPageSection::class.java)
             startActivity(int)
         }
     }
