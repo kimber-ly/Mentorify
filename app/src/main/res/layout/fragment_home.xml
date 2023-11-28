@@ -79,7 +79,7 @@
             android:layout_marginTop="175dp"/>
 
         <TextView
-            android:id="@+id/btn_seeall"
+            android:id="@+id/btn_seeall_popular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="175dp"
@@ -91,12 +91,14 @@
         <HorizontalScrollView
             android:id="@+id/popular_kategori_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="4dp"
             android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="520dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
@@ -630,24 +632,24 @@
             android:id="@+id/your_topic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_below="@+id/popular_kategori_content"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_weight="1"
                 android:text="Your Topic"
-                android:textStyle="bold"
                 android:textSize="16sp"
-                android:layout_marginStart="25dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:textColor="@color/seed"
-                android:text="See all"/>
+                android:layout_weight="0.1"
+                android:text="See all"
+                android:textColor="@color/seed" />
 
         </LinearLayout>
 
@@ -761,6 +763,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
+                android:layout_weight="1"
                 android:text="Top Matchess For You"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -768,7 +771,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="130dp"
+                android:layout_weight="0.1"
                 android:text="See all"
                 android:textColor="@color/seed" />
 

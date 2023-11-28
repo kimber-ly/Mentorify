@@ -6,11 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.mentorify.Adapter.MentorCardAdapter
 import com.example.mentorify.Models.MentorCardModel
+import com.example.mentorify.Utils.SearchPageSection
 import com.example.mentorify.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -33,11 +35,18 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
         val btnsiti: Button = binding.btnSelengkapnyasiti
         btnsiti.setOnClickListener(this)
+
+        val btndzik: TextView = binding.btnSeeallPopular
+        btndzik.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.btn_selengkapnyasiti){
             val int = Intent(activity, OverviewActivity::class.java)
+            startActivity(int)
+        }
+        if (v?.id == R.id.btn_seeall_popular){
+            val int = Intent(activity, SearchPageSection::class.java)
             startActivity(int)
         }
     }
