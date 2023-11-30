@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,793 +8,90 @@
     tools:context=".MainActivity">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/frame_container"/>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/layout_satu">
-
-                <com.google.android.material.search.SearchBar
-                    android:id="@+id/search_bar"
-                    android:layout_width="295dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="30dp"
-                    android:hint="@string/cari_mentor"
-                    android:backgroundTint="@color/white"
-                    app:autoShowKeyboard="true"
-                    android:outlineSpotShadowColor="@color/md_theme_light_outline"/>
-
-                <ImageView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:src="@drawable/notification_outline_24"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/text_search"
-                android:layout_below="@+id/layout_satu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Showing search result of UX Design"
-                android:textSize="16dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/cardview_shadow_start_color"/>
-
-            <LinearLayout
-                android:id="@+id/layout_dua"
-                android:layout_below="@+id/text_search"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center">
-
-                <Button
-                    android:id="@+id/sort_btn_deh"
-                    android:layout_width="160dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginStart="0dp"
-                    android:text="Sort"
-                    android:textColor="@color/md_theme_light_scrim"
-                    android:textSize="12dp"
-                    android:background="@drawable/outlined_button2"
-                    />
-
-                <Button
-                    android:layout_width="160dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginStart="25dp"
-                    android:text="Filter"
-                    android:textColor="@color/md_theme_light_scrim"
-                    android:textSize="12dp"
-                    android:background="@drawable/outlined_button2"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout_tiga"
-                android:layout_below="@+id/layout_dua"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="170dp"
-                    app:cardCornerRadius="10dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/card_orang5"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Al Ikhsan Akbar"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal"/>
-                            <ImageView
-                                android:layout_marginStart="30dp"
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/baseline_bookmark_border_24"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_kerja"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mentor Coding"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_bintang"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="New Mentor"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rp.50.000"
-                                android:textSize="10sp"
-                                android:textStyle="normal"/>
-                            <ImageView
-                                android:layout_width="12dp"
-                                android:layout_height="12dp"
-                                android:src="@drawable/icon_bintang"
-                                android:layout_marginStart="60dp"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4.5"
-                                android:textSize="10sp"
-                                android:layout_marginStart="3dp"
-                                android:textStyle="normal"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="170dp"
-                    app:cardCornerRadius="10dp"
-                    android:layout_marginStart="25dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/card_orang3"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Intan Nurjannah"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal"/>
-                            <ImageView
-                                android:layout_marginStart="25dp"
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/baseline_bookmark_border_24"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_kerja"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mentor Markting"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_bintang"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="New Mentor"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rp.50.000"
-                                android:textSize="10sp"
-                                android:textStyle="normal"/>
-                            <ImageView
-                                android:layout_width="12dp"
-                                android:layout_height="12dp"
-                                android:src="@drawable/icon_bintang"
-                                android:layout_marginStart="60dp"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4.5"
-                                android:textSize="10sp"
-                                android:layout_marginStart="3dp"
-                                android:textStyle="normal"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout_empat"
-                android:layout_below="@+id/layout_tiga"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="170dp"
-                    app:cardCornerRadius="10dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/card_orang5"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Al Ikhsan Akbar"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal"/>
-                            <ImageView
-                                android:layout_marginStart="30dp"
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/baseline_bookmark_border_24"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_kerja"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mentor Coding"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_bintang"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="New Mentor"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rp.50.000"
-                                android:textSize="10sp"
-                                android:textStyle="normal"/>
-                            <ImageView
-                                android:layout_width="12dp"
-                                android:layout_height="12dp"
-                                android:src="@drawable/icon_bintang"
-                                android:layout_marginStart="60dp"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4.5"
-                                android:textSize="10sp"
-                                android:layout_marginStart="3dp"
-                                android:textStyle="normal"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="170dp"
-                    app:cardCornerRadius="10dp"
-                    android:layout_marginStart="25dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/card_orang3"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Intan Nurjannah"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal"/>
-                            <ImageView
-                                android:layout_marginStart="25dp"
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/baseline_bookmark_border_24"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_kerja"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mentor Markting"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_bintang"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="New Mentor"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rp.50.000"
-                                android:textSize="10sp"
-                                android:textStyle="normal"/>
-                            <ImageView
-                                android:layout_width="12dp"
-                                android:layout_height="12dp"
-                                android:src="@drawable/icon_bintang"
-                                android:layout_marginStart="60dp"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4.5"
-                                android:textSize="10sp"
-                                android:layout_marginStart="3dp"
-                                android:textStyle="normal"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout_lima"
-                android:layout_below="@+id/layout_empat"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="170dp"
-                    app:cardCornerRadius="10dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/card_orang5"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Al Ikhsan Akbar"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal"/>
-                            <ImageView
-                                android:layout_marginStart="30dp"
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/baseline_bookmark_border_24"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_kerja"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mentor Coding"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_bintang"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="New Mentor"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rp.50.000"
-                                android:textSize="10sp"
-                                android:textStyle="normal"/>
-                            <ImageView
-                                android:layout_width="12dp"
-                                android:layout_height="12dp"
-                                android:src="@drawable/icon_bintang"
-                                android:layout_marginStart="60dp"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4.5"
-                                android:textSize="10sp"
-                                android:layout_marginStart="3dp"
-                                android:textStyle="normal"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="170dp"
-                    app:cardCornerRadius="10dp"
-                    android:layout_marginStart="25dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:layout_width="140dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/card_orang3"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Intan Nurjannah"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal"/>
-                            <ImageView
-                                android:layout_marginStart="25dp"
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/baseline_bookmark_border_24"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_kerja"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mentor Markting"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/icon_bintang"/>
-
-                            <TextView
-                                android:layout_marginTop="2dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="New Mentor"
-                                android:textSize="10sp"
-                                android:layout_marginStart="5dp"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rp.50.000"
-                                android:textSize="10sp"
-                                android:textStyle="normal"/>
-                            <ImageView
-                                android:layout_width="12dp"
-                                android:layout_height="12dp"
-                                android:src="@drawable/icon_bintang"
-                                android:layout_marginStart="60dp"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4.5"
-                                android:textSize="10sp"
-                                android:layout_marginStart="3dp"
-                                android:textStyle="normal"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-    </ScrollView>
+        android:id="@+id/frame_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layout_satu"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:hint="@string/cari_mentor"
+            android:outlineSpotShadowColor="@color/md_theme_light_outline"
+            app:autoShowKeyboard="true" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/notification_outline_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/layout_satu"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_satu">
+
+        <Button
+            android:id="@+id/sort_btn_deh"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/outlined_button2"
+            android:text="Sort"
+            android:textColor="@color/md_theme_light_scrim"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/outlined_button2"
+            android:text="Filter"
+            android:textColor="@color/md_theme_light_scrim"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mentor_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/mentor_card"
+        app:layout_constraintTop_toBottomOf="@+id/layout_dua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

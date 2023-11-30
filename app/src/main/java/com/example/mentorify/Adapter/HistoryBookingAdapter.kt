@@ -21,10 +21,10 @@ class HistoryBookingAdapter(private val dataset: ArrayList<HistoryBookingDataCla
         val dateHistory: TextView = view.findViewById(R.id.date_history)
         val timeHistory: TextView = view.findViewById(R.id.time_history)
         val btnDetail: Button = view.findViewById(R.id.btn_detail)
+        val btnSendReview: Button = view.findViewById(R.id.btn_sendReview)
 
         init {
             btnDetail.setOnClickListener {
-                val clickedItem: HistoryBookingDataClass = dataset[layoutPosition]
                 val intent = Intent(view.context, HistoryBookingDetailActivity::class.java)
                 view.context.startActivity(intent)
             }
@@ -32,6 +32,11 @@ class HistoryBookingAdapter(private val dataset: ArrayList<HistoryBookingDataCla
                 val intent = Intent(view.context, OverviewActivity::class.java)
                 view.context.startActivity(intent)
 
+            }
+
+            btnSendReview.setOnClickListener{
+                val intent = Intent(view.context, HistoryBookingDetailActivity::class.java)
+                view.context.startActivity(intent)
             }
         }
     }

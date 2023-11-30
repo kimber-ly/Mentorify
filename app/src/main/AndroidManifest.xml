@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Mentorify"
         tools:targetApi="31">
         <activity
+            android:name=".SendReview"
+            android:exported="false" />
+        <activity
             android:name=".Profile_RiwayatTransaksi"
             android:exported="false" />
         <activity
