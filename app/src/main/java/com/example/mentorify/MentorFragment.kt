@@ -32,11 +32,17 @@ class MentorFragment : Fragment(), View.OnClickListener {
 
         val btnfaza: Button = binding.sortBtnDeh
         btnfaza.setOnClickListener(this)
+
+        val btnfilter: Button = binding.filterBtn
+        btnfilter.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.sort_btn_deh) {
             val int = Intent(requireActivity(), SearchPageSection::class.java)
+            startActivity(int)
+        }else if(v?.id == R.id.filter_btn){
+            val int = Intent(requireActivity(), filter::class.java)
             startActivity(int)
         }
     }

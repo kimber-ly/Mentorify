@@ -13,13 +13,23 @@
         android:theme="@style/Theme.Mentorify"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".SendReview"
+=======
+            android:name=".pembayaran"
+>>>>>>> 9d9f01ef0243b75f5639ad99ed2e8bed43165d83
             android:exported="false" />
         <activity
             android:name=".Profile_RiwayatTransaksi"
             android:exported="false" />
         <activity
             android:name=".Profile_SavedMentor"
+            android:exported="false" />
+        <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
+            android:name=".filter"
             android:exported="false" />
         <activity
             android:name=".UpcomingDetailActivity"
