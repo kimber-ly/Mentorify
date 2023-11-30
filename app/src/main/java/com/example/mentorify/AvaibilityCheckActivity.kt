@@ -58,6 +58,9 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         val btnbackavaibek: Button = findViewById(R.id.btn_backAvaibility)
         btnbackavaibek.setOnClickListener(this)
 
+        val btncheckavail: Button = findViewById(R.id.btn_checkAvaibility)
+        btncheckavail.setOnClickListener(this)
+
     }
 
     private fun getDateTimeCalendar(){
@@ -103,7 +106,15 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
                     val intent = Intent(this@AvaibilityCheckActivity, OverviewActivity::class.java)
                     startActivity(intent)
                 }
+
+                R.id.btn_checkAvaibility -> {
+                    val intent2 = Intent(this@AvaibilityCheckActivity, pembayaran::class.java)
+                    startActivity(intent2)
+                }
             }
         }
     }
+
+
+
 }

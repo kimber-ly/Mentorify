@@ -62,7 +62,7 @@
 
                 <Button
                     android:id="@+id/male"
-                    android:layout_width="180dp"
+                    android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:text="Male"
                     android:textColor="@color/md_theme_light_scrim"
@@ -72,7 +72,7 @@
 
                 <Button
                     android:id="@+id/female"
-                    android:layout_width="180dp"
+                    android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
                     android:text="Female"
@@ -108,7 +108,7 @@
                     android:paddingTop="7dp"
                     android:layout_marginTop="16dp"
                     android:numStars="5"
-                    android:rating="3"
+                    android:rating="0"
                     android:stepSize="1"
                     android:background="@drawable/outlined_button2"
                     android:progressBackgroundTint="@color/gray"
@@ -140,7 +140,7 @@
 
                 <Button
                     android:id="@+id/min"
-                    android:layout_width="180dp"
+                    android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:text="Min"
                     android:textColor="@color/md_theme_light_scrim"
@@ -150,7 +150,7 @@
 
                 <Button
                     android:id="@+id/max"
-                    android:layout_width="180dp"
+                    android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="15dp"
                     android:text="Max"
@@ -168,7 +168,7 @@
 
                 <Button
                     android:id="@+id/first"
-                    android:layout_width="115dp"
+                    android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:text="0 - 30K"
                     android:textColor="@color/md_theme_light_scrim"
@@ -178,7 +178,7 @@
 
                 <Button
                     android:id="@+id/sec"
-                    android:layout_width="115dp"
+                    android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="15dp"
                     android:text="30K - 70K"
@@ -189,9 +189,10 @@
 
                 <Button
                     android:id="@+id/third"
-                    android:layout_width="115dp"
+                    android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="15dp"
+                    android:padding="5dp"
                     android:text="70K - 100K"
                     android:textColor="@color/md_theme_light_scrim"
                     android:textSize="12dp"
@@ -223,7 +224,7 @@
                 android:layout_marginTop="16dp">
 
                 <Button
-                    android:layout_width="80dp"
+                    android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:text="09.00"
                     android:textColor="@color/white"
@@ -232,7 +233,7 @@
                     />
 
                 <Button
-                    android:layout_width="80dp"
+                    android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:text="10.00"
                     android:textColor="@color/white"
@@ -242,19 +243,9 @@
                     />
 
                 <Button
-                    android:layout_width="80dp"
+                    android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:text="11.00"
-                    android:textColor="@color/white"
-                    android:textSize="12dp"
-                    android:background="@drawable/regular_grey_button"
-                    android:layout_marginStart="18dp"
-                    />
-
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="12.00"
                     android:textColor="@color/white"
                     android:textSize="12dp"
                     android:background="@drawable/regular_grey_button"
