@@ -2,18 +2,22 @@ package com.example.mentorify
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.DatePicker
 import android.widget.TimePicker
 import android.widget.Toast
 import com.example.mentorify.databinding.ActivityAvaibilityCheckBinding
 import java.util.Calendar
 
-class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
+class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener,
+    View.OnClickListener {
 
     private lateinit var binding: ActivityAvaibilityCheckBinding
 
@@ -51,6 +55,9 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
             Toast.makeText(this,"Item: $itemSelected", Toast.LENGTH_SHORT).show()
         }
 
+        val btnbackavaibek: Button = findViewById(R.id.btn_backAvaibility)
+        btnbackavaibek.setOnClickListener(this)
+
     }
 
     private fun getDateTimeCalendar(){
@@ -87,5 +94,16 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         binding.tvDateTime.text = "$savedDay-$savedMonth-$savedYear "
 
         binding.tvDateWaktu.text = "Hour: $savedHour Minute:$savedMinute "
+    }
+
+    override fun onClick(v: View?) {
+        if (v != null){
+            when (v.id){
+                R.id.btn_backAvaibility -> {
+                    val intent = Intent(this@AvaibilityCheckActivity, OverviewActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+        }
     }
 }

@@ -16,6 +16,9 @@ class ReviewActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnbackreview: Button = findViewById(R.id.btn_backReview)
         btnbackreview.setOnClickListener(this)
+
+        val btncheckreviewdz: Button = findViewById(R.id.btn_checkReview)
+        btncheckreviewdz.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -27,6 +30,10 @@ class ReviewActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.btn_backReview -> {
                     val intent = Intent(this@ReviewActivity, MainActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.btn_checkReview -> {
+                    val intent = Intent(this@ReviewActivity, AvaibilityCheckActivity::class.java)
                     startActivity(intent)
                 }
             }

@@ -15,10 +15,10 @@
 
         <ImageView
             android:id="@+id/icon_kategori_searchpage"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:padding="3dp"
-            android:src="@drawable/icon_marketing"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/marketing"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
