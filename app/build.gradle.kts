@@ -53,5 +53,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.ramotion.paperonboarding:paper-onboarding:1.1.3")
     implementation ("androidx.fragment:fragment:1.3.0")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
 }

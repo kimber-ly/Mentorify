@@ -3,10 +3,13 @@ package com.example.mentorify
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mentorify.Adapter.vpBokingsAdapter
 import com.example.mentorify.databinding.FragmentBookingsBinding
+import com.google.android.material.search.SearchBar
 
 class BookingsFragment : Fragment() {
     private var _binding: FragmentBookingsBinding? = null

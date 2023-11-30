@@ -3,9 +3,5 @@
     <style name="MyDatePickerDialogTheme" parent="Theme.Material3.Light.Dialog">
         <item name="android:headerBackground">@color/md_theme_light_primary</item>
         <item name="android:colorAccent">@color/md_theme_light_primary</item>
-
-
     </style>
-
-
 </resources>

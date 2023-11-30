@@ -11,6 +11,8 @@ import com.example.mentorify.HistoryBookingDetailActivity
 import com.example.mentorify.Models.HistoryBookingDataClass
 import com.example.mentorify.OverviewActivity
 import com.example.mentorify.R
+import com.example.mentorify.ReviewActivity
+import com.example.mentorify.SendReview
 
 
 class HistoryBookingAdapter(private val dataset: ArrayList<HistoryBookingDataClass>) :
@@ -35,7 +37,7 @@ class HistoryBookingAdapter(private val dataset: ArrayList<HistoryBookingDataCla
             }
 
             btnSendReview.setOnClickListener{
-                val intent = Intent(view.context, HistoryBookingDetailActivity::class.java)
+                val intent = Intent(view.context, SendReview::class.java)
                 view.context.startActivity(intent)
             }
         }
