@@ -62,6 +62,7 @@
 
                 <Button
                     android:id="@+id/male"
+                    android:layout_weight="1"
                     android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:text="Male"
@@ -72,6 +73,7 @@
 
                 <Button
                     android:id="@+id/female"
+                    android:layout_weight="1"
                     android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
@@ -140,6 +142,7 @@
 
                 <Button
                     android:id="@+id/min"
+                    android:layout_weight="1"
                     android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:text="Min"
@@ -150,6 +153,7 @@
 
                 <Button
                     android:id="@+id/max"
+                    android:layout_weight="1"
                     android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="15dp"
@@ -168,6 +172,7 @@
 
                 <Button
                     android:id="@+id/first"
+                    android:layout_weight="1"
                     android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:text="0 - 30K"
@@ -178,6 +183,7 @@
 
                 <Button
                     android:id="@+id/sec"
+                    android:layout_weight="1"
                     android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="15dp"
@@ -189,6 +195,7 @@
 
                 <Button
                     android:id="@+id/third"
+                    android:layout_weight="1"
                     android:layout_width="105dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="15dp"
@@ -224,8 +231,9 @@
                 android:layout_marginTop="16dp">
 
                 <Button
-                    android:layout_width="105dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    android:layout_weight="1"
                     android:text="09.00"
                     android:textColor="@color/white"
                     android:textSize="12dp"
@@ -233,8 +241,9 @@
                     />
 
                 <Button
-                    android:layout_width="105dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    android:layout_weight="1"
                     android:text="10.00"
                     android:textColor="@color/white"
                     android:textSize="12dp"
@@ -243,8 +252,9 @@
                     />
 
                 <Button
-                    android:layout_width="105dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    android:layout_weight="1"
                     android:text="11.00"
                     android:textColor="@color/white"
                     android:textSize="12dp"
