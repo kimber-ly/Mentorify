@@ -31,18 +31,18 @@ class Profile_RiwayatTransaksi : AppCompatActivity() {
     private val histories by lazy {
 
         val items = listOf<TransactionHistoryModel>(
-            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.wait_approve_icon),
-            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.approve_icon),
-            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.reject_icon),
-            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.wait_approve_icon),
-            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.approve_icon),
-            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.reject_icon),
-            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.wait_approve_icon),
-            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.approve_icon),
-            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.reject_icon),
-            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.wait_approve_icon),
-            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.approve_icon),
-            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.reject_icon)
+            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.status_waiting),
+            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.status_reject),
+            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.status_accept),
+            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.status_waiting),
+            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.status_reject),
+            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.status_accept),
+            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.status_waiting),
+            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.status_reject),
+            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.status_accept),
+            TransactionHistoryModel("20231113-000000001", "Sambas Purnama - ","Mentor Desain", R.drawable.status_waiting),
+            TransactionHistoryModel("20231113-000002001", "Al Ikhsan Akbar - ","Mentor Coding", R.drawable.status_reject),
+            TransactionHistoryModel("20231113-002030001", "Putri Alifiani - ","Mentor Digital Marketing", R.drawable.status_accept)
 
         )
 

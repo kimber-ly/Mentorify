@@ -57,6 +57,9 @@ class SearchPageSection : AppCompatActivity() {
             SearchPageKategoriModel(R.drawable.teknik_industri, "Teknik Industri", R.drawable.arrow),
             SearchPageKategoriModel(R.drawable.data_science, "Data Science", R.drawable.arrow),
             SearchPageKategoriModel(R.drawable.marketing, "Digital Marketing", R.drawable.arrow),
+            SearchPageKategoriModel(R.drawable.management, "Manajemen", R.drawable.arrow),
+            SearchPageKategoriModel(R.drawable.sistem_informasi, "Sistem Informasi", R.drawable.arrow),
+            SearchPageKategoriModel(R.drawable.design, "Desain", R.drawable.arrow)
         )
 
         KategoriSearchPage(items, object : KategoriSearchPage.AdapterListener{
