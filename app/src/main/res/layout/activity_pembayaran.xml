@@ -34,192 +34,203 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-        <ScrollView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Order Summary"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            />
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="620dp">
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="13dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Your order summary"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal"
+                    android:padding="16dp">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="13dp">
+                    <ImageView
+                        android:layout_width="59dp"
+                        android:layout_height="59dp"
+                        android:src="@drawable/circular_dz4"
+                        />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp">
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_margin="5dp">
+                            android:text="Your Order Summary"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            />
 
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:src="@drawable/tommy_bulat" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="7dp"
-                                    android:text="Tommy Widjaja"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="7dp"
-                                    android:layout_marginTop="5dp"
-                                    android:text="Desgin thinking UX/Figma Prototyping"
-                                    android:textSize="14sp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:background="#CCCCCC" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingTop="16dp"
-                            android:paddingBottom="16dp">
+                            android:text="Design thinking figma prototyping"
+                            android:textSize="10dp"
+                            />
 
-                            <TextView
-                                android:layout_width="140dp"
-                                android:layout_height="wrap_content"
-                                android:text="Time :"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="150dp"
-                                android:layout_height="wrap_content"
-                                android:text="Schedule :"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingBottom="16dp">
-
-                            <Button
-                                android:id="@+id/time"
-                                android:layout_width="wrap_content"
-                                android:layout_height="50dp"
-                                android:background="@drawable/regular_grey_button"
-                                android:text="60 Menit" />
-
-                            <Button
-                                android:id="@+id/time2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="40dp"
-                                android:background="@drawable/regular_grey_button"
-                                android:padding="1dp"
-                                android:text="11 Sept 2023"
-                                android:textSize="10dp" />
-
-                            <Button
-                                android:id="@+id/time3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="10dp"
-                                android:background="@drawable/regular_grey_button"
-                                android:padding="5dp"
-                                android:text="21.00 - 22.00"
-                                android:textSize="8dp" />
-
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:background="#CCCCCC" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingTop="16dp"
-                            android:paddingBottom="16dp">
-
-                            <TextView
-                                android:layout_width="257dp"
-                                android:layout_height="wrap_content"
-                                android:text="Package Price"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Rp. 50.000"
-                                android:textColor="@color/md_theme_light_primary"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="16dp">
+                    android:orientation="horizontal"
+                    android:padding="16dp">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Time :"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Schedule :"
+                        android:textSize="16dp"
+                        android:paddingLeft="10dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/regular_button2"
+                        android:enabled="true"
+                        android:text="60 menit"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        />
+
+                    <Button
+                        android:layout_marginStart="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
                         android:layout_gravity="center"
-                        android:paddingBottom="16dp"
-                        android:text="Your order summary"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:background="@drawable/regular_button2"
+                        android:enabled="true"
+                        android:text="11 Sept 2023"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        />
+
+                    <Button
+                        android:layout_marginStart="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/regular_button2"
+                        android:enabled="true"
+                        android:text="21.00-22.00"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Package Price : "
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 50.000 "
+                        android:textSize="16dp"
+                        android:textColor="@color/md_theme_light_primary"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Payment Method"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp">
-
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="13dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -229,32 +240,64 @@
                             <ImageView
                                 android:layout_width="70dp"
                                 android:layout_height="16dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/gopay" />
+                                android:src="@drawable/gopay"
+                                android:layout_gravity="center"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="5dp"
-                                android:text="GoPay"
-                                android:textSize="14sp"
+                                android:text="Gopay"
                                 android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:layout_marginStart="10dp"
                                 android:layout_weight="1"/>
 
                             <RadioButton
-                                android:id="@+id/radioButton"
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0"/>
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="13dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/dana"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dana"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp">
-
+                        android:layout_marginBottom="1dp"
+                        app:cardCornerRadius="13dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -264,114 +307,75 @@
                             <ImageView
                                 android:layout_width="70dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/dana" />
+                                android:src="@drawable/shopeepay"
+                                android:layout_gravity="center"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="5dp"
-                                android:text="Dana"
-                                android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:layout_weight="1"/>
-
-                            <RadioButton
-                                android:id="@+id/radioButton2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0"/>
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:padding="16dp">
-
-                            <ImageView
-                                android:layout_width="70dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/shopeepay" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="5dp"
                                 android:text="ShopeePay"
-                                android:textSize="14sp"
                                 android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:layout_marginStart="10dp"
                                 android:layout_weight="1"/>
 
                             <RadioButton
-                                android:id="@+id/radioButton3"
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0"/>
+                                android:layout_height="match_parent"/>
+
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
+                </RadioGroup>
 
             </LinearLayout>
-        </ScrollView>
 
-    <androidx.cardview.widget.CardView
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content">
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white">
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            android:background="@color/white">
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="Total : Rp. 60.000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="Service Price : Rp. 10.000"
-                    android:textSize="8dp"
-                    android:textColor="@color/md_theme_light_primary"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="20dp"
-                android:layout_gravity="center"
-                android:background="@drawable/regular_grey_button"
-                android:enabled="true"
-                android:text="Pay"
-                android:textColor="@color/white"
-                android:textStyle="bold"/>
+                android:text="Total : Rp 60.000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service price Rp 10.000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_light_primary"
+                />
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/regular_button2"
+            android:enabled="true"
+            android:text="Pay"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
 
 </LinearLayout>
 
