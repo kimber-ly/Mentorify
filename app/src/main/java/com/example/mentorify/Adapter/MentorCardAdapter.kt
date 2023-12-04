@@ -19,10 +19,10 @@ class MentorCardAdapter(
 ): RecyclerView.Adapter<MentorCardAdapter.ViewHolder>(){
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
-        val image = itemView.findViewById<ImageView>(R.id.image_mentor_card)
-        val name = itemView.findViewById<TextView>(R.id.name_mentor_card)
-        val occasion = itemView.findViewById<TextView>(R.id.occasion_mentor_card)
-        val price = itemView.findViewById<TextView>(R.id.price_mentor_card)
+        val image: ImageView = itemView.findViewById(R.id.image_mentor_card)
+        val name: TextView = itemView.findViewById(R.id.name_mentor_card)
+        val occasion: TextView = itemView.findViewById(R.id.occasion_mentor_card)
+        val price: TextView = itemView.findViewById(R.id.price_mentor_card)
 
     }
 

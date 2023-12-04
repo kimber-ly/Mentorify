@@ -1,23 +1,30 @@
 package com.example.mentorify
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.example.mentorify.databinding.ActivityReviewBinding
 
 class ReviewActivity : AppCompatActivity(), View.OnClickListener {
+    private lateinit var binding: ActivityReviewBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_review)
+        binding = ActivityReviewBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val btnoverview: Button = findViewById(R.id.btn_Overview2)
+        binding.mentorReviewImg.setImageResource(intent.getIntExtra("gambar", 0))
+        binding.mentorReviewName.text = intent.getStringExtra("nama")
+        binding.mentorReviewOccasion.text = intent.getStringExtra("bidang")
+
+        val btnoverview: Button = binding.btnOverview2
         btnoverview.setOnClickListener(this)
 
-        val btnbackreview: Button = findViewById(R.id.btn_backReview)
+        val btnbackreview: Button = binding.btnBackReview
         btnbackreview.setOnClickListener(this)
 
-        val btncheckreviewdz: Button = findViewById(R.id.btn_checkReview)
+        val btncheckreviewdz: Button = binding.btnCheckReview
         btncheckreviewdz.setOnClickListener(this)
     }
 
@@ -26,6 +33,13 @@ class ReviewActivity : AppCompatActivity(), View.OnClickListener {
             when (v.id) {
                 R.id.btn_Overview2 -> {
                     val intent = Intent(this@ReviewActivity, OverviewActivity::class.java)
+
+                    val bundle = Bundle()
+                    bundle.putInt("gambar", intent.getIntExtra("gambar", 0))
+                    bundle.putString("nama", intent.getStringExtra("nama"))
+                    bundle.putString("bidang", intent.getStringExtra("bidang"))
+
+                    intent.putExtras(bundle)
                     startActivity(intent)
                 }
                 R.id.btn_backReview -> {

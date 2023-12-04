@@ -5,16 +5,16 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mentorify.databinding.ActivityOverviewBinding
+import com.example.mentorify.databinding.ActivityPopularOverviewBinding
 
 
-class OverviewActivity : AppCompatActivity(), View.OnClickListener {
+class PopularOverview : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var binding: ActivityOverviewBinding
+    private lateinit var binding: ActivityPopularOverviewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityOverviewBinding.inflate(layoutInflater)
+        binding = ActivityPopularOverviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.imgMentor.setImageResource(intent.getIntExtra("gambar", 0))
@@ -35,22 +35,15 @@ class OverviewActivity : AppCompatActivity(), View.OnClickListener {
         if (v != null) {
             when (v.id) {
                 R.id.btn_Review1 -> {
-                    val intent = Intent(this@OverviewActivity, ReviewActivity::class.java)
-
-                    val bundle = Bundle()
-                    bundle.putInt("gambar", intent.getIntExtra("gambar", 0))
-                    bundle.putString("nama", intent.getStringExtra("nama"))
-                    bundle.putString("bidang", intent.getStringExtra("bidang"))
-
-                    intent.putExtras(bundle)
+                    val intent = Intent(this@PopularOverview, ReviewActivity::class.java)
                     startActivity(intent)
                 }
                 R.id.btn_backOverview -> {
-                    val intent = Intent(this@OverviewActivity, MainActivity::class.java)
+                    val intent = Intent(this@PopularOverview, MainActivity::class.java)
                     startActivity(intent)
                 }
                 R.id.btn_checkOverview -> {
-                    val intent = Intent(this@OverviewActivity, AvaibilityCheckActivity::class.java)
+                    val intent = Intent(this@PopularOverview, AvaibilityCheckActivity::class.java)
                     startActivity(intent)
                 }
             }
