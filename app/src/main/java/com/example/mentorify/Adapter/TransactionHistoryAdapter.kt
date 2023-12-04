@@ -19,7 +19,7 @@ class TransactionHistoryAdapter(
         val id = itemView.findViewById<TextView>(R.id.idtrans_transhistory_card)
         val name = itemView.findViewById<TextView>(R.id.title_name_transhistory_card)
         val occasion = itemView.findViewById<TextView>(R.id.title_occasion_transhistory_card)
-        val status = itemView.findViewById<ImageView>(R.id.status_transhistory)
+//        val status = itemView.findViewById<ImageView>(R.id.status_transhistory)
 
     }
 
@@ -35,7 +35,7 @@ class TransactionHistoryAdapter(
         holder.id.text = item.id
         holder.name.text = item.name
         holder.occasion.text = item.occasion
-        holder.status.setImageResource(item.status)
+//        holder.status.setImageResource(item.status)
 
         holder.itemView.setOnClickListener{
             listener.onClick(item)

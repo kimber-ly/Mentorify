@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="7dp"
+        android:padding="5dp"
         android:background="@drawable/category_list_searchpage_ripple">
 
         <ImageView
@@ -29,7 +29,6 @@
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-
             android:text="Al Ikhsan Akbar"
             android:textSize="12sp"
             android:textStyle="bold|normal"

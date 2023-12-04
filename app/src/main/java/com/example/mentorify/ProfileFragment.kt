@@ -8,13 +8,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
 import com.example.mentorify.Utils.SearchPageSection
 
 class ProfileFragment : Fragment() {
     private lateinit var btnEditProfile : LinearLayout
-    private lateinit var btnSavedMentor : LinearLayout
+    private lateinit var btnNotifProfile : LinearLayout
+    private lateinit var btnSecurityProfile : LinearLayout
     private lateinit var btnHistory : LinearLayout
+    private lateinit var btnSavedMentor : LinearLayout
+    private lateinit var btnBecomeMentor : TextView
+    private lateinit var logout : ImageView
+
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,6 +51,31 @@ class ProfileFragment : Fragment() {
         btnHistory.setOnClickListener {
             startActivity(Intent(requireActivity(), Profile_RiwayatTransaksi::class.java))
         }
+
+        //<----- evt notif ----->
+        btnNotifProfile = view.findViewById(R.id.notif_btn_profile)
+        btnNotifProfile.setOnClickListener {
+            Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
+        }
+
+        //<----- evt secure ----->
+        btnSecurityProfile = view.findViewById(R.id.secureity_btn_profile)
+        btnSecurityProfile.setOnClickListener {
+            Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
+        }
+
+        //<----- evt btn become mentor ----->
+        btnBecomeMentor = view.findViewById(R.id.switch_mentor_btn_profile)
+        btnBecomeMentor.setOnClickListener {
+            Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
+        }
+
+        //<----- evt btn logout ----->
+        logout = view.findViewById(R.id.logout)
+        logout.setOnClickListener {
+            Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
+        }
+
 
         return view
     }

@@ -45,17 +45,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Sambas Purnama - "
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@id/idtrans_transhistory_card"
                     app:layout_constraintStart_toStartOf="@id/idtrans_transhistory_card"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     />
                 <TextView
                     android:id="@+id/title_occasion_transhistory_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Mentor Design"
                     android:textSize="14sp"
                     android:textStyle="bold"
@@ -63,15 +66,15 @@
                     app:layout_constraintStart_toEndOf="@id/title_name_transhistory_card"
                     />
 
-                <ImageView
-                    android:id="@+id/status_transhistory"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/wait_approve_icon"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/idtrans_transhistory_card"
-                    android:background="@drawable/wait_approve_bg"
-                    />
+<!--                <ImageView-->
+<!--                    android:id="@+id/status_transhistory"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/wait_approve_icon"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@id/idtrans_transhistory_card"-->
+<!--                    android:background="@drawable/wait_approve_bg"-->
+<!--                    />-->
 
                 <TextView
                     android:id="@+id/price_mentor_card"
@@ -79,12 +82,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="10dp"
                     android:text="Rp.50.000"
                     android:textSize="12sp"
                     android:textStyle="normal"
                     android:textColor="@color/md_theme_light_primary"
-                    app:layout_constraintTop_toBottomOf="@id/status_transhistory"
-                    app:layout_constraintEnd_toEndOf="@id/status_transhistory"
+                    app:layout_constraintTop_toTopOf="@id/idtrans_transhistory_card"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     />
 
