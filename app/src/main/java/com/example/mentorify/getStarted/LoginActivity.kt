@@ -2,22 +2,52 @@ package com.example.mentorify
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mentorify.databinding.ActivityLoginBinding
+import com.example.mentorify.getStarted.ChooseTopic
 import com.example.mentorify.getStarted.ForgetPassword
+import com.example.mentorify.getStarted.RegisterActivity2
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
+
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
 
-        val btnLogin: Button = findViewById(R.id.login_btn)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        binding.loginBtn.setOnClickListener {
+            val email = binding.gmailEdt.text.toString()
+            val password = binding.passwordEdt.text.toString()
+
+            if (email.isNotEmpty() && password.isNotEmpty()){
+                    firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
+                        if (it.isSuccessful){
+                            val intent = Intent(this, RegisterActivity2::class.java)
+                            startActivity(intent)
+                        }else{
+                            Toast.makeText(this, it.exception.toString() , Toast.LENGTH_SHORT).show()
+                        }
+                    }
+            }else{
+                Toast.makeText(this, "Silahkan Isi formulir tersebut !!" , Toast.LENGTH_SHORT).show()
+            }
+        }
+
         val toRegister: TextView = findViewById(R.id.to_register_txt)
         val forgetPasswordTxt: TextView = findViewById(R.id.forgetPassword_txt)
 
-        btnLogin.setOnClickListener(this)
         toRegister.setOnClickListener(this)
         forgetPasswordTxt.setOnClickListener(this)
     }
@@ -25,10 +55,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         if (v != null) {
             when (v.id) {
-                R.id.login_btn -> {
-                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                    startActivity(intent)
-                }
                 R.id.to_register_txt -> {
                     val intent = Intent(this@LoginActivity,
                         RegisterActivity::class.java)

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "487524172678",
+    "project_id": "mentorify-b35df",
+    "storage_bucket": "mentorify-b35df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487524172678:android:7a6056f667efc92c21a207",
+        "android_client_info": {
+          "package_name": "com.example.mentorify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaEnUtT2hTV2ZHWd-SAFlxXuxa7GCQwvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

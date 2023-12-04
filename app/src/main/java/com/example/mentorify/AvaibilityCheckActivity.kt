@@ -96,7 +96,7 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
         binding.tvDateTime.text = "$savedDay-$savedMonth-$savedYear "
 
-        binding.tvDateWaktu.text = "Hour: $savedHour Minute:$savedMinute "
+        binding.tvDateWaktu.text = "Jam: $savedHour Minute: $savedMinute "
     }
 
     override fun onClick(v: View?) {
