@@ -1,10 +1,10 @@
 package com.example.mentorify
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mentorify.databinding.ActivityOverviewBinding
 
 
@@ -17,13 +17,17 @@ class OverviewActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityOverviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val btnreview: Button = findViewById(R.id.btn_Review1)
+//        binding.imgMentor.setImageResource(intent.getIntExtra("gambar", 0))
+//        binding.namaMentor.text = intent.getStringExtra("nama")
+//        binding.bidangMentor.text = intent.getStringExtra("bidang")
+
+        val btnreview: Button = binding.btnReview1
         btnreview.setOnClickListener(this)
 
-        val btnbackoverview: Button = findViewById(R.id.btn_backOverview)
+        val btnbackoverview: Button = binding.btnBackOverview
         btnbackoverview.setOnClickListener(this)
 
-        val btncheckover: Button = findViewById(R.id.btn_checkOverview)
+        val btncheckover: Button = binding.btnCheckOverview
         btncheckover.setOnClickListener(this)
     }
 
