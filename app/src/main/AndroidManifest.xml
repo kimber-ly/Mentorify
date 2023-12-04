@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mentorify"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Profile_Notifikasi"
+            android:exported="false" />
         <activity
             android:name=".SendReview"
             android:exported="false" />

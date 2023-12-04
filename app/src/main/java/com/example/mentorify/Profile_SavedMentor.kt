@@ -7,9 +7,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Adapter.MentorCardAdapter
-import com.example.mentorify.Adapter.PopulerSearchPage
 import com.example.mentorify.Models.MentorCardModel
-import com.example.mentorify.Models.SearchPagePopularModel
 
 class Profile_SavedMentor : AppCompatActivity() {
     lateinit var list_mentor : RecyclerView

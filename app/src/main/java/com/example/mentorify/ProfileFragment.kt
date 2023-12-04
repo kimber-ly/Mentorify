@@ -1,6 +1,8 @@
 package com.example.mentorify
 
 import android.annotation.SuppressLint
+import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -55,7 +57,7 @@ class ProfileFragment : Fragment() {
         //<----- evt notif ----->
         btnNotifProfile = view.findViewById(R.id.notif_btn_profile)
         btnNotifProfile.setOnClickListener {
-            Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
+            startActivity(Intent(requireActivity(), Profile_Notifikasi::class.java))
         }
 
         //<----- evt secure ----->
@@ -73,7 +75,25 @@ class ProfileFragment : Fragment() {
         //<----- evt btn logout ----->
         logout = view.findViewById(R.id.logout)
         logout.setOnClickListener {
-            Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
+
+            val builder = AlertDialog.Builder(requireActivity())
+            builder.setTitle("Confirm")
+            builder.setMessage("Anda yakin mau melakukan log out?")
+//            builder.setIcon(android.R.drawable.ic_dialog_alert)
+            builder.setCancelable(false)
+            builder.setPositiveButton("Yes"){ dialogInterface, _ ->
+                startActivity(Intent(requireActivity(), LoginActivity::class.java))
+                dialogInterface.cancel()
+            }
+            builder.setNeutralButton("Cancel"){ dialogInterface, _ ->
+                dialogInterface.cancel()
+            }
+            builder.setNegativeButton("No"){ dialogInterface, _ ->
+                dialogInterface.cancel()
+            }
+            builder.create().show()
+
+
         }
 
 

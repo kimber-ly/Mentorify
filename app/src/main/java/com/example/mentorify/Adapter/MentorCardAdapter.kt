@@ -11,8 +11,8 @@ import com.example.mentorify.R
 
 
 class MentorCardAdapter(
-    var items : List<MentorCardModel>,
-    var listener : AdapterListener
+    var items: List<MentorCardModel>,
+    var listener: AdapterListener
 ): RecyclerView.Adapter<MentorCardAdapter.ViewHolder>(){
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
