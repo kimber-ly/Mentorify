@@ -1,5 +1,7 @@
 package com.example.mentorify.Adapter
 
+import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Models.MentorCardModel
+import com.example.mentorify.OverviewActivity
 import com.example.mentorify.R
 
 
@@ -39,6 +42,17 @@ class MentorCardAdapter(
 
         holder.itemView.setOnClickListener{
             listener.onClick(item)
+            val context = holder.itemView.context
+
+            val intent = Intent(context, OverviewActivity::class.java)
+
+            val bundle = Bundle()
+            bundle.putInt("gambar", item.image)
+            bundle.putString("nama", item.name)
+            bundle.putString("bidang", item.occasion)
+
+            intent.putExtras(bundle)
+            context.startActivity(intent)
         }
     }
 

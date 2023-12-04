@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.mentorify.Adapter.MentorCardAdapter
 import com.example.mentorify.Models.MentorCardModel
@@ -110,7 +109,9 @@ class MentorFragment : Fragment(), View.OnClickListener {
 
         MentorCardAdapter(items, object : MentorCardAdapter.AdapterListener {
             override fun onClick(mentor: MentorCardModel) {
-                Toast.makeText(requireContext(), "test!", Toast.LENGTH_LONG).show()
+//                Toast.makeText(requireContext(), "test!", Toast.LENGTH_LONG).show()
+//                val intent = Intent(requireContext(), OverviewActivity::class.java)
+//                startActivity(intent)
             }
         })
     }

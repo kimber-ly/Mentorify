@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.mentorify.Adapter.MentorCardAdapter
@@ -114,7 +113,9 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
         MentorCardAdapter(items, object : MentorCardAdapter.AdapterListener {
             override fun onClick(mentor: MentorCardModel) {
-                Toast.makeText(requireContext(), "test!", Toast.LENGTH_LONG).show()
+//                Toast.makeText(requireContext(), "test!", Toast.LENGTH_LONG).show()
+//                val intent = Intent(requireContext(), OverviewActivity::class.java)
+//                startActivity(intent)
             }
         })
     }
