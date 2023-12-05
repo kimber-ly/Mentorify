@@ -1,16 +1,22 @@
 package com.example.mentorify
 
 import android.app.DatePickerDialog
+import android.app.Dialog
 import android.app.TimePickerDialog
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.Window
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.DatePicker
+import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.TimePicker
 import android.widget.Toast
 import com.example.mentorify.databinding.ActivityAvaibilityCheckBinding
@@ -38,6 +44,12 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         binding = ActivityAvaibilityCheckBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val btnSelect : Button = findViewById(R.id.btnSelectTime)
+        btnSelect.setOnClickListener {
+            val message : String? = "Pilih waktu yang tersedia"
+            showCustomDialogBox(message)
+        }
+
         pickDate()
 
         val items = listOf("Kotlin", "Java", "My Sql", "FireBase DataBase")
@@ -61,6 +73,29 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         val btncheckavail: Button = findViewById(R.id.btn_checkAvaibility)
         btncheckavail.setOnClickListener(this)
 
+    }
+
+    private fun showCustomDialogBox(message: String?) {
+        val dialog = Dialog (this)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(false)
+        dialog.setContentView(R.layout.layout_time_picker_dialog)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val tvMessage : TextView = dialog.findViewById(R.id.tvMessage)
+        val linear : LinearLayout = dialog.findViewById(R.id.linearBtn)
+        val linear2 : LinearLayout = dialog.findViewById(R.id.linearBtn2)
+        val btnYes : Button = dialog.findViewById(R.id.btnYes)
+        val btnNo : Button = dialog.findViewById(R.id.btnNo)
+
+
+        btnYes.setOnClickListener {
+            Toast.makeText(this, "Click on Yes", Toast.LENGTH_LONG).show()
+        }
+        btnNo.setOnClickListener {
+            dialog.dismiss()
+        }
+        dialog.show()
     }
 
     private fun getDateTimeCalendar(){
@@ -114,7 +149,4 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
             }
         }
     }
-
-
-
 }

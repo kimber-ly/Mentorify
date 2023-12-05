@@ -29,8 +29,8 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Check Avaibility"
-                android:layout_marginStart="80dp"
+                android:text="Periksa Ketersediaan"
+                android:layout_marginStart="70dp"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Order Summary"
+        android:text="Ringkasan pesanan anda"
         android:layout_marginTop="80dp"
         android:layout_marginStart="25dp"
         android:textSize="14sp"
@@ -95,7 +95,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select confirm your boking"
+        android:text="Pilih konfirmasi pemesanan anda"
         android:layout_marginTop="215dp"
         android:layout_marginStart="25dp"
         android:textSize="12sp"
@@ -137,6 +137,17 @@
         android:backgroundTint="@color/white"
         android:text="Change"
         android:textColor="@color/seed"/>
+
+    <Button
+        android:id="@+id/btnSelectTime"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:text="Change"
+        android:textColor="@color/seed"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,7 +177,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select main topic"
+        android:text="Pilih topik utama"
         android:layout_marginTop="320dp"
         android:layout_marginStart="25dp"
         android:textSize="12sp"
@@ -199,7 +210,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add your question to this booking"
+        android:text="Tambahkan pertanyaan Anda ke pemesanan ini"
         android:layout_marginTop="420dp"
         android:layout_marginStart="25dp"
         android:textSize="12sp"
@@ -254,7 +265,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Booking fee"
+            android:text="Biaya pemesanan"
             android:textSize="10dp"
             tools:ignore="TextSizeCheck" />
 
@@ -270,7 +281,7 @@
             android:id="@+id/btn_checkAvaibility"
             android:layout_width="320dp"
             android:layout_height="50dp"
-            android:text="Continue Bookings"
+            android:text="Lanjutkan Pemesanan"
             android:background="@drawable/regular_button"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"

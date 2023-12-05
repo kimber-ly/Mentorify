@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Models.PopularKategoryModel
 import com.example.mentorify.PopularOverview
 import com.example.mentorify.R
+import com.example.mentorify.RingkasanActivity
 
 class PopularKategoriAdapter (private val popularMentor: ArrayList<PopularKategoryModel>):
     RecyclerView.Adapter<PopularKategoriAdapter.ViewHolder>() {
@@ -49,7 +50,7 @@ class PopularKategoriAdapter (private val popularMentor: ArrayList<PopularKatego
 
         holder.selengkapnya.setOnClickListener {
             val context = holder.itemView.context
-            val intent = Intent(context, PopularOverview::class.java)
+            val intent = Intent(context, RingkasanActivity::class.java)
 
             val bundle = Bundle()
             bundle.putInt("gambar", popular.image)
