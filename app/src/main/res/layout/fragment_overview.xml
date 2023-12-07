@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="About"
+            android:text="Tentang"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Background"
+            android:text="Latar Belakang"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -64,7 +64,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Expertise :"
+                        android:text="Keahlian :"
                         android:textSize="12sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="5dp"/>
@@ -74,7 +74,7 @@
                         android:layout_height="40dp"
                         android:backgroundTint="@color/white"
                         android:textColor="@color/black"
-                        android:layout_marginStart="110dp"
+                        android:layout_marginStart="115dp"
                         android:layout_marginTop="5dp"
                         android:textSize="10sp"
                         android:text="Android Developer"/>
@@ -97,7 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="50dp"
-                        android:text="Diciplines :"
+                        android:text="Disiplin ilmu :"
                         android:textSize="12sp" />
 
                     <Button
@@ -129,7 +129,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Education"
+            android:text="Pendidikan"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -171,7 +171,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Experience"
+            android:text="Pengalaman"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"

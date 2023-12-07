@@ -123,7 +123,6 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="3dp"
             android:textColorHint="@color/black"
-            tools:text="@tools:sample/date/ddmmyy"
             android:textColor="@color/black"/>
 
     </LinearLayout>
@@ -135,7 +134,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:backgroundTint="@color/white"
-        android:text="Change"
+        android:text="Edit"
         android:textColor="@color/seed"/>
 
     <Button
@@ -145,7 +144,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:backgroundTint="@color/white"
-        android:text="Change"
+        android:text="Edit"
         android:textColor="@color/seed"/>
 
     <LinearLayout
@@ -221,30 +220,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="445dp">
+        android:layout_marginTop="430dp">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/topik_dz"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/message"
-            app:helperText="Required*"
-            app:counterEnabled="true"
-            app:counterMaxLength="30"
-            app:helperTextTextColor="@color/seed"
-            android:layout_marginStart="35dp"
+            android:layout_marginVertical="16dp"
+            android:hint="Sertakan topik masalah anda"
             android:layout_marginEnd="35dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:layout_marginStart="35dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="30">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/topik_dz2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:lines="5"
-                android:maxLength="30"
-                android:gravity="top"
-                android:overScrollMode="always"
-                android:scrollbars="vertical"
-                android:scrollbarStyle="insideInset"
-                android:scrollHorizontally="false"/>
+                android:maxLength="30"/>
+
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>

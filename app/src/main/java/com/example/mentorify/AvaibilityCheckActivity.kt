@@ -20,29 +20,50 @@ import android.widget.TextView
 import android.widget.TimePicker
 import android.widget.Toast
 import com.example.mentorify.databinding.ActivityAvaibilityCheckBinding
+import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.util.Locale
 
-class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener,
-    View.OnClickListener {
+class AvaibilityCheckActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityAvaibilityCheckBinding
 
-    var day = 0
-    var month = 0
-    var year = 0
-    var hour = 0
-    var minute = 0
+    lateinit var tvDate: TextView
+    lateinit var btnChange: Button
 
-    var savedDay = 0
-    var savedMonth = 0
-    var savedYear = 0
-    var savedHour = 0
-    var savedMinute = 0
+//    var day = 0
+//    var month = 0
+//    var year = 0
+//    var hour = 0
+//    var minute = 0
+//
+//    var savedDay = 0
+//    var savedMonth = 0
+//    var savedYear = 0
+//    var savedHour = 0
+//    var savedMinute = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAvaibilityCheckBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        tvDate = findViewById(R.id.tvDateTime)
+        btnChange = findViewById(R.id.btnChange)
+
+        val myCalendar = Calendar.getInstance()
+
+        val datePicker = DatePickerDialog.OnDateSetListener { _, year, month, dayOfMonth ->
+            myCalendar.set(Calendar.YEAR, year)
+            myCalendar.set(Calendar.MONTH, month)
+            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            updateLable(myCalendar)
+        }
+
+        btnChange.setOnClickListener {
+            DatePickerDialog(this, datePicker, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+            myCalendar.get(Calendar.DAY_OF_MONTH)).show()
+        }
 
         val btnSelect : Button = findViewById(R.id.btnSelectTime)
         btnSelect.setOnClickListener {
@@ -50,7 +71,7 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
             showCustomDialogBox(message)
         }
 
-        pickDate()
+//        pickDate()
 
         val items = listOf("Kotlin", "Java", "My Sql", "FireBase DataBase")
 
@@ -61,7 +82,7 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         autoComplete.setAdapter(adapter)
 
         autoComplete.onItemClickListener = AdapterView.OnItemClickListener {
-                adapterView, view, i, l ->
+                adapterView, _, i, l ->
 
             val itemSelected = adapterView.getItemAtPosition(i)
             Toast.makeText(this,"Item: $itemSelected", Toast.LENGTH_SHORT).show()
@@ -78,6 +99,29 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         }
 
     }
+
+    private fun updateLable(myCalendar: Calendar) {
+        val myFormat = "dd-MM-yyyy"
+        val sdf = SimpleDateFormat(myFormat, Locale.UK)
+        tvDate.setText(sdf.format(myCalendar.time))
+
+    }
+
+//    private fun showDatePicker() {
+//        val datePickerDialog = DatePickerDialog(this, { view, year: Int,monthOfYear: Int, dayOfMonth: Int ->
+//            val selectedDate = Calendar.getInstance()
+//            selectedDate.set(year, monthOfYear, dayOfMonth)
+//            val dateFormat = SimpleDateFormat("dd/mm/yyyy", Locale.getDefault())
+//            val formatedDate = dateFormat.format(selectedDate.time)
+//            tvDate.text = "$formatedDate"
+//
+//        },
+//            calendar.get(Calendar.YEAR),
+//            calendar.get(Calendar.MONTH),
+//            calendar.get(Calendar.DAY_OF_MONTH)
+//        )
+//        datePickerDialog.show()
+//    }
 
     private fun showCustomDialogBox(message: String?) {
         val dialog = Dialog (this)
@@ -102,41 +146,41 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         dialog.show()
     }
 
-    private fun getDateTimeCalendar(){
-        val cal = Calendar.getInstance()
-        day = cal.get(Calendar.DAY_OF_MONTH)
-        month = cal.get(Calendar.MONTH)
-        year = cal.get(Calendar.YEAR)
-        hour = cal.get(Calendar.HOUR)
-        minute = cal.get(Calendar.MINUTE)
-    }
+//    private fun getDateTimeCalendar(){
+//        val cal = Calendar.getInstance()
+//        day = cal.get(Calendar.DAY_OF_MONTH)
+//        month = cal.get(Calendar.MONTH)
+//        year = cal.get(Calendar.YEAR)
+//        hour = cal.get(Calendar.HOUR)
+//        minute = cal.get(Calendar.MINUTE)
+//    }
 
-    private fun pickDate() {
-        binding.btnChange.setOnClickListener {
-            getDateTimeCalendar()
+//    private fun pickDate() {
+//        binding.btnChange.setOnClickListener {
+//            getDateTimeCalendar()
+//
+//            DatePickerDialog(this, this, year, month, day).show()
+//        }
+//    }
 
-            DatePickerDialog(this, this, year, month, day).show()
-        }
-    }
-
-    override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
-        savedDay = dayOfMonth
-        savedMonth = month
-        savedYear = year
-
-        getDateTimeCalendar()
-
+//    override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
+//        savedDay = dayOfMonth
+//        savedMonth = month
+//        savedYear = year
+//
+//        getDateTimeCalendar()
+//
 //        TimePickerDialog(this, this, hour, minute, true).show()
-    }
+//    }
 
-    override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
-//        savedHour = hourOfDay
-//        savedMinute = minute
-
-        binding.tvDateTime.text = "$savedDay-$savedMonth-$savedYear "
-
-//        binding.tvDateWaktu.text = "Jam: $savedHour Minute: $savedMinute "
-    }
+//    override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
+////        savedHour = hourOfDay
+////        savedMinute = minute
+//
+//        binding.tvDateTime.text = "$savedDay-$savedMonth-$savedYear "
+//
+////        binding.tvDateWaktu.text = "Jam: $savedHour Minute: $savedMinute "
+//    }
 
     override fun onClick(v: View?) {
         if (v != null){
