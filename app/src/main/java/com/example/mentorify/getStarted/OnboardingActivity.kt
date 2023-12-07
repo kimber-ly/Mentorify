@@ -2,16 +2,15 @@ package com.example.mentorify.getStarted
 
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mentorify.LoginActivity
 import com.example.mentorify.R
 import com.example.mentorify.RegisterActivity
 import com.ramotion.paperonboarding.PaperOnboardingFragment
 import com.ramotion.paperonboarding.PaperOnboardingPage
-import java.util.ArrayList
 
 class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var register: Button
@@ -48,14 +47,14 @@ class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
             R.drawable.onboarding_img_2,
             R.drawable.baseline_school_24
         )
-        val page3 = PaperOnboardingPage("Komunitas Mahasiswa",
-            "Kami memberikan ruang untuk berbagi pengalaman, bertanya, dan mendapatkan dukungan dari komunitas Mahasiswa.",
+        val page3 = PaperOnboardingPage("Forum Tanya Jawab",
+            "Kami memberikan ruang untuk saling berbagi pengalaman dan bertanya.",
             Color.WHITE,
             R.drawable.onboarding_img_3,
             R.drawable.baseline_people_24
         )
         val page4 = PaperOnboardingPage("Dapatkan Bimbingan dari para Professional",
-            "Aplikasi mentoring kami membantu anda mencapai potensi penuh anda dengan dukungan pribadi dari mentor berpengalaman, kurikulum yang disesuaikan, dan komunitas yang mendukung pertumbuhan Anda secara holistik.",
+            "Raih potensi penuh anda dengan dukungan pribadi dari mentor berpengalaman dan komunitas yang mendukung pertumbuhan Anda secara holistik.",
             Color.WHITE,
             R.drawable.onboarding_img_4,
             R.drawable.baseline_thumb_up_24

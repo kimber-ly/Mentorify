@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="10dp"
+    android:layout_margin="4dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="13dp"
+        app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="7dp"
                     android:layout_marginTop="10dp"
+                    android:layout_weight="1"
                     android:text="Dzikri Arfiansyah"
                     android:textSize="14sp"
                     android:textStyle="bold|normal" />
@@ -46,7 +48,6 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:layout_marginStart="85dp"
                     android:layout_marginTop="7dp"
                     android:src="@drawable/baseline_bookmark_border_24" />
 

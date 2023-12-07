@@ -33,13 +33,13 @@ class RegisterActivity2 : AppCompatActivity() {
         return listOf(
             ChooseTopic(topicImg = R.drawable.data_science, topicName = "Data Science"),
             ChooseTopic(topicImg = R.drawable.teknik_industri, topicName = "Teknik Industri"),
-            ChooseTopic(topicImg = R.drawable.management, topicName = "Management"),
-            ChooseTopic(topicImg = R.drawable.coding, topicName = "Coding"),
-            ChooseTopic(topicImg = R.drawable.design, topicName = "Design"),
-            ChooseTopic(topicImg = R.drawable.marketing, topicName = "Marketing"),
+            ChooseTopic(topicImg = R.drawable.management, topicName = "Manajemen"),
+            ChooseTopic(topicImg = R.drawable.coding, topicName = "Pemrograman"),
+            ChooseTopic(topicImg = R.drawable.design, topicName = "Desain"),
+            ChooseTopic(topicImg = R.drawable.marketing, topicName = "Pemasaran"),
             ChooseTopic(topicImg = R.drawable.sistem_informasi, topicName = "Sistem Informasi"),
             ChooseTopic(topicImg = R.drawable.bisnis_digital, topicName = "Bisnis Digital"),
-            ChooseTopic(topicImg = R.drawable.medical, topicName = "Medical"),
+            ChooseTopic(topicImg = R.drawable.medical, topicName = "Kesehatan"),
         )
     }
 }
