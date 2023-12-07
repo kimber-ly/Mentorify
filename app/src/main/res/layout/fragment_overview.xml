@@ -13,7 +13,6 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_marginTop="340dp"
             android:layout_width="match_parent"
             android:layout_height="390dp"
             android:src="@drawable/background_secret"/>
@@ -25,7 +24,7 @@
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="25dp"/>
 
         <TextView
@@ -33,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="@string/about"
             android:textSize="12sp"
-            android:layout_marginTop="380dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="25dp"/>
 
         <TextView
@@ -44,12 +43,12 @@
             android:textSize="12sp"
             android:textStyle="bold"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="440dp"/>
+            android:layout_marginTop="100dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="470dp">
+            android:layout_marginTop="125dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="5dp"
@@ -135,14 +134,14 @@
             android:textSize="12sp"
             android:textStyle="bold"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="580dp"/>
+            android:layout_marginTop="240dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="600dp">
+            android:layout_marginTop="265dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -177,14 +176,14 @@
             android:textSize="12sp"
             android:textStyle="bold"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="650dp"/>
+            android:layout_marginTop="310dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="675dp">
+            android:layout_marginTop="340dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -210,39 +209,39 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="725dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginTop="390dp">-->
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/baseline_work_24"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Governor"
-                    android:textSize="12sp"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Governor Office of DKI Jakarta ・Oct 2017 - Okt 2022"
-                    android:textSize="10sp"/>
-            </LinearLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/baseline_work_24"/>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:orientation="vertical">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Governor"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Governor Office of DKI Jakarta ・Oct 2017 - Okt 2022"-->
+<!--                    android:textSize="10sp"/>-->
+<!--            </LinearLayout>-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
         <View
-            android:layout_marginTop="780dp"
+            android:layout_marginTop="470dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/md_theme_light_secondaryContainer"/>

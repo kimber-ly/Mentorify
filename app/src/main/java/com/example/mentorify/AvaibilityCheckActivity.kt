@@ -67,11 +67,15 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
             Toast.makeText(this,"Item: $itemSelected", Toast.LENGTH_SHORT).show()
         }
 
-        val btnbackavaibek: Button = findViewById(R.id.btn_backAvaibility)
-        btnbackavaibek.setOnClickListener(this)
-
+//        val btnbackavaibek: Button = findViewById(R.id.btn_backAvaibility)
+//        btnbackavaibek.setOnClickListener(this)
+//
         val btncheckavail: Button = findViewById(R.id.btn_checkAvaibility)
         btncheckavail.setOnClickListener(this)
+
+        binding.btnBackAvaibility.setOnClickListener {
+            onBackPressed();
+        }
 
     }
 
@@ -122,30 +126,30 @@ class AvaibilityCheckActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
         getDateTimeCalendar()
 
-        TimePickerDialog(this, this, hour, minute, true).show()
+//        TimePickerDialog(this, this, hour, minute, true).show()
     }
 
     override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
-        savedHour = hourOfDay
-        savedMinute = minute
+//        savedHour = hourOfDay
+//        savedMinute = minute
 
         binding.tvDateTime.text = "$savedDay-$savedMonth-$savedYear "
 
-        binding.tvDateWaktu.text = "Jam: $savedHour Minute: $savedMinute "
+//        binding.tvDateWaktu.text = "Jam: $savedHour Minute: $savedMinute "
     }
 
     override fun onClick(v: View?) {
         if (v != null){
             when (v.id){
-                R.id.btn_backAvaibility -> {
-                    val intent = Intent(this@AvaibilityCheckActivity, OverviewActivity::class.java)
-                    startActivity(intent)
-                }
-
-                R.id.btn_checkAvaibility -> {
+//                R.id.btn_backAvaibility -> {
+//                    val intent = Intent(this@AvaibilityCheckActivity, OverviewActivity::class.java)
+//                    startActivity(intent)
+//                }
+//
+                    R.id.btn_checkAvaibility -> {
                     val intent2 = Intent(this@AvaibilityCheckActivity, pembayaran::class.java)
                     startActivity(intent2)
-                }
+               }
             }
         }
     }

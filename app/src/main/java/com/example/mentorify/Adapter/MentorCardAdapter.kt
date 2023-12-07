@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Models.MentorCardModel
 import com.example.mentorify.OverviewActivity
 import com.example.mentorify.R
+import com.example.mentorify.RingkasanActivity
 
 
 class MentorCardAdapter(
@@ -44,7 +45,7 @@ class MentorCardAdapter(
             listener.onClick(item)
             val context = holder.itemView.context
 
-            val intent = Intent(context, OverviewActivity::class.java)
+            val intent = Intent(context, RingkasanActivity::class.java)
 
             val bundle = Bundle()
             bundle.putInt("gambar", item.image)

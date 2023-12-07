@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btn_backOverview"
+            android:id="@+id/btn_backRingkasan"
             android:layout_width="50dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
@@ -35,12 +35,13 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <ImageView
+        <CheckBox
+            android:id="@+id/cbSaved"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            app:useMaterialThemeColors="false"
             android:layout_marginStart="90dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/baseline_bookmark_border_24" />
+            android:button="@drawable/selector_wishlist_item"/>
 
         <ImageView
             android:layout_width="24dp"
@@ -69,7 +70,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="Tommy Widjaja"
+        android:background="@color/white"
         android:textColor="@color/black"
+        android:shadowColor="@color/white"
+        android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bidang_mentor"
@@ -77,13 +81,17 @@
         app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+
     <TextView
         android:id="@+id/bidang_mentor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:text="Android Development"
+        android:background="@color/white"
         android:textColor="@color/black"
+        android:textAllCaps="false"
         android:textSize="12sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/img_mentor"
@@ -112,5 +120,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab_layout"
         app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_checkRingkasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Check Availibility"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
