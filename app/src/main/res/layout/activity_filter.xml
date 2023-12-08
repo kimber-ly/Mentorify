@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gender"
+                android:text="Jenis kelamin"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
 
@@ -65,7 +65,7 @@
                     android:layout_weight="1"
                     android:layout_width="165dp"
                     android:layout_height="40dp"
-                    android:text="Male"
+                    android:text="Laki-laki"
                     android:textColor="@color/md_theme_light_scrim"
                     android:textSize="12dp"
                     android:background="@drawable/outlined_button2"
@@ -77,7 +77,7 @@
                     android:layout_width="165dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
-                    android:text="Female"
+                    android:text="Perempuan"
                     android:textColor="@color/md_theme_light_scrim"
                     android:textSize="12dp"
                     android:background="@drawable/outlined_button2"
@@ -129,7 +129,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Price"
+                android:text="Harga"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
 
@@ -219,7 +219,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Available Schedule"
+                android:text="Jadwal yang tersedia"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
 
