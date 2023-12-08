@@ -8,21 +8,28 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Adapter.MentorCardAdapter
 import com.example.mentorify.Models.MentorCardModel
+import com.example.mentorify.databinding.ActivityProfileSavedMentorBinding
 
 class Profile_SavedMentor : AppCompatActivity() {
     lateinit var list_mentor : RecyclerView
     lateinit var backBtn : ImageView
+    private lateinit var binding: ActivityProfileSavedMentorBinding
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile_saved_mentor)
+        binding = ActivityProfileSavedMentorBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         list_mentor = findViewById<RecyclerView>(R.id.list_mentor_savedmentor)
         list_mentor.adapter = Mentors
 
-        backBtn = findViewById<ImageView>(R.id.back_btn_savedmentor)
-        backBtn.setOnClickListener {
-            Toast.makeText(this@Profile_SavedMentor, "this is back button", Toast.LENGTH_LONG).show()
+//        backBtn = findViewById<ImageView>(R.id.back_btn_savedmentor)
+//        backBtn.setOnClickListener {
+//            Toast.makeText(this@Profile_SavedMentor, "this is back button", Toast.LENGTH_LONG).show()
+//        }
+        binding.backBtnSavedmentor.setOnClickListener {
+            onBackPressed()
         }
     }
 

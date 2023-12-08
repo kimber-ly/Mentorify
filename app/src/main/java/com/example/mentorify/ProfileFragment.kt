@@ -15,6 +15,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.example.mentorify.Utils.SearchPageSection
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ProfileFragment : Fragment() {
     private lateinit var btnEditProfile : LinearLayout
@@ -30,6 +31,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
@@ -63,7 +65,7 @@ class ProfileFragment : Fragment() {
         //<----- evt secure ----->
         btnSecurityProfile = view.findViewById(R.id.secureity_btn_profile)
         btnSecurityProfile.setOnClickListener {
-            Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
+            startActivity(Intent(requireActivity(), KeamananActivity::class.java))
         }
 
         //<----- evt btn become mentor ----->

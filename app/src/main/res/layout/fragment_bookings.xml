@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BookingsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white">
 
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-<!--                <com.google.android.material.search.SearchBar-->
-<!--                    android:id="@+id/search_bar"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="48dp"-->
-<!--                    android:backgroundTint="@color/white"-->
-<!--                    android:hint="@string/cari_mentor"-->
-<!--                    android:focusable="true"-->
-<!--                    android:outlineSpotShadowColor="@color/md_theme_light_outline"-->
-<!--                    app:autoShowKeyboard="true" />-->
-                <SearchView
+
+                <com.google.android.material.search.SearchBar
+                    android:id="@+id/search_bar"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:focusable="true"
-                    android:inputType="text"/>
+                    android:layout_height="48dp"
+                    android:hint="@string/cari_mentor"
+                    android:backgroundTint="@color/white"
+                    app:autoShowKeyboard="true"
+                    android:outlineSpotShadowColor="@color/md_theme_light_outline"/>
 
             </LinearLayout>
 
@@ -43,28 +35,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/md_theme_light_secondaryContainer" />
-
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayoutBookings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                app:tabMode="fixed"
                 app:tabGravity="fill"
+                android:background="@color/white"
                 app:tabIndicator="@color/md_theme_light_primary"
                 app:tabIndicatorHeight="2dp"
+                app:tabSelectedTextColor="@color/md_theme_light_primary"
                 app:tabInlineLabel="true"
-                app:tabMode="fixed"
-                app:tabSelectedTextColor="@color/md_theme_light_primary" />
+                android:contentDescription="@string/appbar_scrolling_view_behavior"/>
 
         </com.google.android.material.appbar.AppBarLayout>
-
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/vpBookings"
+            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/app_name" />
+            android:contentDescription="@string/app_name"
+            />
     </LinearLayout>
 
 </FrameLayout>

@@ -11,9 +11,7 @@ import com.example.mentorify.R
 
 
 class NotifProfileAdapter(
-    var items : List<NotifProfileModel>,
-    var listener : AdapterListener
-): RecyclerView.Adapter<NotifProfileAdapter.ViewHolder>(){
+    var items : List<NotifProfileModel>, var listener : AdapterListener): RecyclerView.Adapter<NotifProfileAdapter.ViewHolder>(){
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val image = itemView.findViewById<ImageView>(R.id.image_notif_profile)

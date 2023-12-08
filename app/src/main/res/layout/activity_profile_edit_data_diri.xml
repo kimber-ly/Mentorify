@@ -66,22 +66,47 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <EditText
-        android:id="@+id/et_nama_datadiripage"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="96dp"
-        android:padding="10dp"
-        android:textSize="14sp"
-        android:background="@drawable/et_background_datadiri"
-        android:hint="Nama Lengkap"
+<!--    <EditText-->
+<!--        android:id="@+id/et_nama_datadiripage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="96dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="14sp"-->
+<!--        android:background="@drawable/et_background_datadiri"-->
+<!--        android:hint="Nama Lengkap"-->
+<!--        android:maxLength="20"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_nama_datadiripage"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        />-->
 
-        app:layout_constraintTop_toBottomOf="@id/tv_nama_datadiripage"
-        app:layout_constraintStart_toStartOf="parent"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_nama_datadiripage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/text_field"
+        app:hintEnabled="false"
+        app:counterMaxLength="25"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_datadiripage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/namaLkp_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:maxLength="25"
+            android:hint="Nama Lenkap"
+            tools:layout_editor_absoluteX="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/tv_date_datadiripage"
         android:layout_width="wrap_content"
@@ -104,6 +129,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="26dp"
+        android:paddingStart="15dp"
         android:textSize="14sp"
         android:padding="10dp"
         android:background="@drawable/et_background_datadiri"
@@ -157,22 +183,48 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <EditText
-        android:id="@+id/et_no_datadiripage"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="96dp"
-        android:padding="10dp"
-        android:background="@drawable/et_background_datadiri"
-        android:hint="+62 - xxx - xxx - xxx - xx"
-        android:textSize="16sp"
+<!--    <EditText-->
+<!--        android:id="@+id/et_no_datadiripage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="96dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/et_background_datadiri"-->
+<!--        android:hint="+62 - xxx - xxx - xxx - xx"-->
+<!--        android:textSize="16sp"-->
 
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_no_datadiripage"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_no_datadiripage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/text_field"
+        app:hintEnabled="false"
+        app:counterMaxLength="20"
         app:layout_constraintTop_toBottomOf="@id/tv_no_datadiripage"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/noHp_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:maxLength="20"
+            android:hint="+62 896-5479-3917"
+            tools:layout_editor_absoluteX="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <TextView
         android:id="@+id/tv_email_datadiripage"
         android:layout_width="wrap_content"
@@ -187,22 +239,45 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <EditText
-        android:id="@+id/et_email_datadiripage"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="96dp"
-        android:padding="10dp"
-        android:background="@drawable/et_background_datadiri"
-        android:hint="/@gmail.com"
-        android:textSize="14sp"
+<!--    <EditText-->
+<!--        android:id="@+id/et_email_datadiripage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="96dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/et_background_datadiri"-->
+<!--        android:hint="/@gmail.com"-->
+<!--        android:textSize="14sp"-->
 
-        app:layout_constraintTop_toBottomOf="@id/tv_email_datadiripage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_email_datadiripage"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_email_datadiripage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/text_field"
+        app:counterMaxLength="25"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_datadiripage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="mohamaddzikriarfiansyah@gmail.com"
+            android:maxLength="25"
+            tools:layout_editor_absoluteX="0dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/tv_unv_datadiripage"
         android:layout_width="wrap_content"
@@ -217,35 +292,55 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <EditText
-        android:id="@+id/et_unv_datadiripage"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="96dp"
-        android:padding="10dp"
-        android:background="@drawable/et_background_datadiri"
-        android:hint="Universitas XYZ (Tidak Disingkat)"
-        android:textSize="14sp"
+<!--    <EditText-->
+<!--        android:id="@+id/et_unv_datadiripage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="96dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/et_background_datadiri"-->
+<!--        android:hint="Universitas XYZ (Tidak Disingkat)"-->
+<!--        android:textSize="14sp"-->
 
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_unv_datadiripage"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_unv_datadiripage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintTop_toBottomOf="@id/tv_unv_datadiripage"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_completeUniv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/item_label"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:layout_gravity="center"
+        android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_gravity="center"
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="20dp"
-        android:text="Simpan Perubahan"
         android:background="@drawable/regular_button"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-        />
+        android:text="Simpan Perubahan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 

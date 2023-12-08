@@ -10,21 +10,28 @@ import com.example.mentorify.Adapter.MentorCardAdapter
 import com.example.mentorify.Adapter.TransactionHistoryAdapter
 import com.example.mentorify.Models.MentorCardModel
 import com.example.mentorify.Models.TransactionHistoryModel
+import com.example.mentorify.databinding.ActivityProfileRiwayatTransaksiBinding
 
 class Profile_RiwayatTransaksi : AppCompatActivity() {
     private lateinit var listHistory : RecyclerView
     private lateinit var backBtn : ImageView
+    private lateinit var binding: ActivityProfileRiwayatTransaksiBinding
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile_riwayat_transaksi)
+        binding = ActivityProfileRiwayatTransaksiBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         listHistory = findViewById<RecyclerView>(R.id.list_histori_transaksi)
         listHistory.adapter = histories
 
-        backBtn = findViewById<ImageView>(R.id.back_btn_histori_transaksi)
-        backBtn.setOnClickListener {
-            Toast.makeText(this@Profile_RiwayatTransaksi, "this is back button", Toast.LENGTH_LONG).show()
+//        backBtn = findViewById<ImageView>(R.id.back_btn_histori_transaksi)
+//        backBtn.setOnClickListener {
+//            Toast.makeText(this@Profile_RiwayatTransaksi, "this is back button", Toast.LENGTH_LONG).show()
+//        }
+        binding.backBtnHistoriTransaksi.setOnClickListener {
+            onBackPressed()
         }
     }
 
