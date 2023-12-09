@@ -1,6 +1,9 @@
 package com.example.mentorify.Utils
 
+import android.content.Context
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +19,12 @@ class SearchPageSection : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_page_section)
 
+        val search_box = findViewById<EditText>(R.id.search_box_searchpage)
+        search_box.requestFocus()
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY)
+
+
         val list_populer = findViewById<RecyclerView>(R.id.list_kategori_populer_searchpage)
         list_populer.adapter = PopulerSearchItems
 
@@ -24,7 +33,7 @@ class SearchPageSection : AppCompatActivity() {
 
         val backBtn = findViewById<ImageView>(R.id.back_btn_searchpage)
         backBtn.setOnClickListener {
-            Toast.makeText(this@SearchPageSection, "test!", Toast.LENGTH_LONG).show()
+            onBackPressed()
         }
 
     }

@@ -26,6 +26,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
+        binding.searchBarHome.setOnClickListener {
+            startActivity(Intent(requireActivity(), SearchPageSection::class.java))
+        }
+
         val adapter = PopularKategoriAdapter(popularMentorData())
         binding.popularKategoriContent.adapter = adapter
         binding.popularKategoriContent.layoutManager =

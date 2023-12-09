@@ -3,14 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="190dp"
+    android:layout_height="200dp"
     android:layout_marginHorizontal="15dp"
     android:layout_marginVertical="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="10dp">
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:padding="5dp"
         android:background="@drawable/category_list_searchpage_ripple">
@@ -26,11 +27,11 @@
 
         <TextView
             android:id="@+id/name_mentor_card"
-            android:layout_width="115dp"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Al Ikhsan Akbar"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold|normal"
             app:layout_constraintTop_toBottomOf="@id/image_mentor_card"
             app:layout_constraintStart_toStartOf="@id/image_mentor_card"
@@ -38,8 +39,8 @@
 
         <ImageView
             android:id="@+id/bookmark_icon_mentor_card"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/baseline_bookmark_border_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentorify.Models.MentorCardModel
 import com.example.mentorify.OverviewActivity
@@ -25,6 +26,8 @@ class MentorCardAdapter(
         val occasion: TextView = itemView.findViewById(R.id.occasion_mentor_card)
         val price: TextView = itemView.findViewById(R.id.price_mentor_card)
 
+        val save_btn : ImageView = itemView.findViewById(R.id.bookmark_icon_mentor_card)
+        var save_btn_state = 0
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(
@@ -54,6 +57,42 @@ class MentorCardAdapter(
 
             intent.putExtras(bundle)
             context.startActivity(intent)
+        }
+
+        holder.save_btn.setOnClickListener {
+            if(holder.save_btn_state == 0){
+
+                holder.save_btn.animate().apply {
+                    duration = 200
+                    scaleX(1.4F)
+                    scaleY(1.4F)
+                }.withEndAction {
+                    holder.save_btn.animate().apply {
+                        duration = 200
+                        scaleX(1.0F)
+                        scaleY(1.0F)
+                    }.start()
+                }
+                holder.save_btn_state = 1
+                holder.save_btn.setImageResource(R.drawable.baseline_bookmark_24_blue)
+                Toast.makeText(holder.itemView.context, "Mentor Telah Disimpan", Toast.LENGTH_LONG).show()
+            }
+            else if (holder.save_btn_state == 1){
+                holder.save_btn.animate().apply {
+                    duration = 200
+                    scaleX(1.4F)
+                    scaleY(1.4F)
+                }.withEndAction {
+                    holder.save_btn.animate().apply {
+                        duration = 200
+                        scaleX(1.0F)
+                        scaleY(1.0F)
+                    }.start()
+                }
+                holder.save_btn_state = 0
+                holder.save_btn.setImageResource(R.drawable.baseline_bookmark_border_24)
+                Toast.makeText(holder.itemView.context, "Dihapus Dari Tersimpan", Toast.LENGTH_LONG).show()
+            }
         }
     }
 
