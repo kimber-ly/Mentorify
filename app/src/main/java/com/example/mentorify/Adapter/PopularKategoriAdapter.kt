@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mentorify.Models.DataWhislist
 import com.example.mentorify.Models.PopularKategoryModel
 import com.example.mentorify.PopularOverview
 import com.example.mentorify.R
@@ -52,6 +53,9 @@ class PopularKategoriAdapter (private var popularMentor: ArrayList<PopularKatego
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val popular = popularMentor[position]
+        if(DataWhislist.getAllData().find { name -> name.equals(popular.name) }!=null) {
+            holder.save_btn.setImageResource(R.drawable.baseline_bookmark_24_blue)
+        }
 
         holder.image.setImageResource(popular.image)
         holder.name.text = popular.name
@@ -89,6 +93,8 @@ class PopularKategoriAdapter (private var popularMentor: ArrayList<PopularKatego
                 }
                 holder.save_btn_state = 1
                 holder.save_btn.setImageResource(R.drawable.baseline_bookmark_24_blue)
+                DataWhislist.addWishlist(holder.name.text.toString())
+
                 Toast.makeText(holder.itemView.context, "Mentor Telah Disimpan", Toast.LENGTH_LONG).show()
             }
             else if (holder.save_btn_state == 1){

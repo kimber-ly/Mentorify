@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mentorify.Adapter.MentorCardAdapter
 import com.example.mentorify.Adapter.PopularKategoriAdapter
+import com.example.mentorify.Models.DataUser
 import com.example.mentorify.Models.MentorCardModel
 import com.example.mentorify.Models.PopularKategoryModel
 import com.example.mentorify.Utils.SearchPageSection
@@ -88,7 +89,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
             }
 
             if (filteredList.isEmpty()) {
-                Toast.makeText(binding.root.context, "No Data found", Toast.LENGTH_SHORT).show()
+                Toast.makeText(binding.root.context, "Data tidak ditemukan", Toast.LENGTH_SHORT).show()
             } else {
                 this.adapter.setFilteredList(filteredList)
             }
@@ -97,80 +98,17 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
 
     private fun addDataToList(){
-        pop_mentor_list.add(PopularKategoryModel(
-            image = R.drawable.card_orang8,
-            name = "Tommy Widjaja",
-            occasion = "Android Developer",
-            price = "Rp50.000",
-            rating = "4.5",
-            session = "20 sesi (15 penilaian)"
-        ))
-
-        pop_mentor_list.add(PopularKategoryModel(
-            image = R.drawable.carddzikri,
-            name = "Dzikri Arfiansyah",
-            occasion = "Mentor Teknik Industri",
-            price = "Rp50.000",
-            rating = "4.6",
-            session = "18 sesi (17 penilaian)"
-        ))
-
-        pop_mentor_list.add(PopularKategoryModel(
-            image = R.drawable.card_orang4,
-            name = "Faza Atsmaro",
-            occasion = "Mentor Coding",
-            price = "Rp50.000",
-            rating = "4.4",
-            session = "15 sesi (13 penilaian)"
-        ))
-
-        pop_mentor_list.add(PopularKategoryModel(
-            image = R.drawable.card_orang1,
-            name = "Siti Aulia",
-            occasion = "Mentor Design",
-            price = "Rp50.000",
-            rating = "4.8",
-            session = "23 sesi (18 penilaian)"
-        ))
+        for(user in DataUser.getAllData()){
+            pop_mentor_list.add(PopularKategoryModel(
+                image = user.get("image") as Int,
+                name = user.get("name") as String,
+                occasion = user.get("occasion") as String,
+                price = user.get("price") as String,
+                rating = user.get("rating") as String,
+                session = user.get("session") as String
+            ))
+        }
     }
-
-
-//    private fun popularMentorData(): ArrayList<PopularKategoryModel> {
-//        return arrayListOf(
-//            PopularKategoryModel(
-//                image = R.drawable.card_orang8,
-//                name = "Tommy Widjaja",
-//                occasion = "Android Developer",
-//                price = "Rp50.000",
-//                rating = "4.5",
-//                session = "20 sessions (15 reviews)"
-//            ),
-//            PopularKategoryModel(
-//                image = R.drawable.carddzikri,
-//                name = "Dzikri Arfiansyah",
-//                occasion = "Mentor Teknik Industri",
-//                price = "Rp50.000",
-//                rating = "4.6",
-//                session = "18 sessions (17 reviews)"
-//            ),
-//            PopularKategoryModel(
-//                image = R.drawable.card_orang4,
-//                name = "Faza Atsmaro",
-//                occasion = "Mentor Coding",
-//                price = "Rp50.000",
-//                rating = "4.4",
-//                session = "15 sessions (13 reviews)"
-//            ),
-//            PopularKategoryModel(
-//                image = R.drawable.card_orang1,
-//                name = "Siti Aulia",
-//                occasion = "Mentor Design",
-//                price = "Rp50.000",
-//                rating = "4.8",
-//                session = "23 sessions (18 reviews)"
-//            ),
-//        )
-//    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

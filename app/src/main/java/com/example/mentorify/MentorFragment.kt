@@ -23,6 +23,7 @@ class MentorFragment : Fragment(), View.OnClickListener {
         binding = FragmentMentorBinding.inflate(layoutInflater)
         binding.mentorRecyclerView.adapter = Mentor
 
+
         return binding.root
     }
 
