@@ -2,14 +2,11 @@ package com.example.mentorify
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mentorify.databinding.ActivityLoginBinding
-import com.example.mentorify.getStarted.ChooseTopic
 import com.example.mentorify.getStarted.ForgetPassword
 import com.example.mentorify.getStarted.RegisterActivity2
 import com.google.firebase.auth.FirebaseAuth
@@ -27,6 +24,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        //hapus auth firebase & hanya regis yg pilih topik, login ga perlu pilih topik
         binding.loginBtn.setOnClickListener {
             val email = binding.gmailEdt.text.toString()
             val password = binding.passwordEdt.text.toString()
