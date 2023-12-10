@@ -1,5 +1,6 @@
 package com.example.mentorify.Adapter
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,9 +16,9 @@ import com.example.mentorify.PopularOverview
 import com.example.mentorify.R
 import com.example.mentorify.RingkasanActivity
 
-class PopularKategoriAdapter (private val popularMentor: ArrayList<PopularKategoryModel>):
+class PopularKategoriAdapter (private var popularMentor: ArrayList<PopularKategoryModel>):
     RecyclerView.Adapter<PopularKategoriAdapter.ViewHolder>() {
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val image: ImageView = view.findViewById(R.id.popular_mentor_img)
         val name: TextView = view.findViewById(R.id.popular_mentor_name)
         val occasion: TextView = view.findViewById(R.id.popular_mentor_occasion)
@@ -29,7 +30,14 @@ class PopularKategoriAdapter (private val popularMentor: ArrayList<PopularKatego
 
         val save_btn : ImageView = view.findViewById(R.id.popular_save_btn)
         var save_btn_state = 0
+
+
     }
+        @SuppressLint("NotifyDataSetChanged")
+        fun setFilteredList(mList: ArrayList<PopularKategoryModel>){
+            popularMentor = mList
+            notifyDataSetChanged()
+        }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val context = parent.context

@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
-                    android:text="11 sessions (17 review)"
+                    android:text="11 sesi (17 penilaian)"
                     android:textSize="10sp" />
 
             </LinearLayout>

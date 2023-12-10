@@ -82,7 +82,7 @@
             android:layout_marginTop="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 Sessions (0 reviews)"
+            android:text="0 Sesi (0 penilaian)"
             android:textSize="8sp"
             android:layout_marginStart="5dp"
             app:layout_constraintStart_toEndOf="@id/status_icon_mentor_card"
