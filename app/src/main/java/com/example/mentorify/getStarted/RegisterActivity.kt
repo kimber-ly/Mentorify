@@ -20,6 +20,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         val toLogin: TextView = findViewById(R.id.to_login_txt)
 
         toLogin.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View?) {
