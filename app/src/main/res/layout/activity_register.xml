@@ -101,7 +101,7 @@
         app:startIconDrawable="@drawable/baseline_location_on_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/asalKampus_edt"
+            android:id="@+id/edt_institutions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -134,45 +134,7 @@
             tools:layout_editor_absoluteX="0dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout_confirmPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:background="@drawable/text_field"
-        android:layout_marginHorizontal="16dp"
-        app:hintEnabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:endIconMode="password_toggle"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_password"
-        app:startIconDrawable="@drawable/baseline_lock_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirmPassword_edt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            tools:layout_editor_absoluteX="0dp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/register_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/regular_button"
-        android:paddingHorizontal="80dp"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_confirmPassword" />
-
-<!--    <TextView-->
+    <!--    <TextView-->
 <!--        android:id="@+id/textView"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -207,6 +169,19 @@
 <!--                android:src="@drawable/apple" />-->
 <!--        </TableRow>-->
 <!--    </TableLayout>-->
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/regular_button"
+        android:paddingHorizontal="80dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_password" />
 
     <TableLayout
         android:layout_width="wrap_content"

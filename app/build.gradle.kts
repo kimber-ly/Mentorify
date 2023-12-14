@@ -57,4 +57,9 @@ dependencies {
     implementation ("com.ramotion.paperonboarding:paper-onboarding:1.1.3")
     implementation ("androidx.fragment:fragment:1.3.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6")
 }
