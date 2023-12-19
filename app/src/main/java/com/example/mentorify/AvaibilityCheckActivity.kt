@@ -2,11 +2,9 @@ package com.example.mentorify
 
 import android.app.DatePickerDialog
 import android.app.Dialog
-import android.app.TimePickerDialog
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.Window
@@ -14,11 +12,10 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
-import android.widget.DatePicker
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.TimePicker
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mentorify.databinding.ActivityAvaibilityCheckBinding
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -91,7 +88,7 @@ class AvaibilityCheckActivity : AppCompatActivity(), View.OnClickListener {
 //        val btnbackavaibek: Button = findViewById(R.id.btn_backAvaibility)
 //        btnbackavaibek.setOnClickListener(this)
 //
-        val btncheckavail: Button = findViewById(R.id.btn_checkAvaibility)
+        val btncheckavail: Button = findViewById(R.id.btn_pesan)
         btncheckavail.setOnClickListener(this)
 
         binding.btnBackAvaibility.setOnClickListener {
@@ -190,9 +187,11 @@ class AvaibilityCheckActivity : AppCompatActivity(), View.OnClickListener {
 //                    startActivity(intent)
 //                }
 //
-                    R.id.btn_checkAvaibility -> {
-                    val intent2 = Intent(this@AvaibilityCheckActivity, pembayaran::class.java)
-                    startActivity(intent2)
+                    R.id.btn_pesan -> {
+                        val intent2 = Intent(this@AvaibilityCheckActivity, MainActivity::class.java)
+                        startActivity(intent2)
+                        Toast.makeText(this@AvaibilityCheckActivity,
+                            "Pemesanan Berhasil", Toast.LENGTH_SHORT).show()
                }
             }
         }
