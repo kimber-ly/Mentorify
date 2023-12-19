@@ -366,12 +366,13 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/tombol_bayar"
             android:layout_width="190dp"
             android:layout_height="48dp"
             android:layout_gravity="bottom"
             android:background="@drawable/regular_button2"
             android:enabled="true"
-            android:text="Pay"
+            android:text="Bayar"
             android:textColor="@color/white"
             android:textStyle="bold"
             />
