@@ -19,7 +19,7 @@ interface ApiInterface {
 
 class RetrofitInstance {
     companion object {
-        val BASE_URL: String = "http://10.0.2.2:3301/"
+        val BASE_URL: String = "https://23442ztw-3301.asse.devtunnels.ms/"
 
         val interceptor: HttpLoggingInterceptor = HttpLoggingInterceptor().apply {
             this.level = HttpLoggingInterceptor.Level.BODY

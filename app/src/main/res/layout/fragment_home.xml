@@ -28,15 +28,39 @@
             android:layout_height="155dp"
             android:src="@drawable/top_background" />
 
-        <TextView
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="HI, Mohamad Dzikri "
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="15dp"/>
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi, "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/user_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama User"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/gambar_hai"/>
+
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,25 +70,21 @@
             android:textColor="@color/white"
             android:layout_marginStart="25dp"
             android:layout_marginTop="45dp"/>
-        <ImageView
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="220dp"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/gambar_hai"/>
 
         <ImageView
-            android:layout_marginTop="25dp"
-            android:layout_marginStart="350dp"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/notification_outline_putihdz"/>
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/notification_outline_putihdz" />
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_barHome"
-            android:layout_width="340dp"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginStart="35dp"
+            android:layout_marginHorizontal="35dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/search_background"/>
 
