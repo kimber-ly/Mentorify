@@ -272,10 +272,10 @@
             android:textColor="@color/black"/>
 
         <Button
-            android:id="@+id/btn_checkAvaibility"
+            android:id="@+id/btn_pesan"
             android:layout_width="320dp"
             android:layout_height="50dp"
-            android:text="Lanjutkan Pemesanan"
+            android:text="Pesan"
             android:background="@drawable/regular_button"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
