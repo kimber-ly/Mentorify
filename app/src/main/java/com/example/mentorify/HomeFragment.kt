@@ -2,10 +2,10 @@ package com.example.mentorify
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.SearchView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -14,10 +14,16 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mentorify.Adapter.MentorCardAdapter
 import com.example.mentorify.Adapter.PopularKategoriAdapter
 import com.example.mentorify.Models.DataUser
+import com.example.mentorify.Models.GetProfileModel
 import com.example.mentorify.Models.MentorCardModel
 import com.example.mentorify.Models.PopularKategoryModel
 import com.example.mentorify.Utils.SearchPageSection
+import com.example.mentorify.api.ApiInterface
+import com.example.mentorify.api.RetrofitInstance
 import com.example.mentorify.databinding.FragmentHomeBinding
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.util.Locale
 
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -34,6 +40,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(layoutInflater)
+
         //search init
         binding.searchBarHome.queryHint = "Cari Mentor"
         binding.searchBarHome.setIconifiedByDefault(false)
@@ -77,6 +84,41 @@ class HomeFragment : Fragment(), View.OnClickListener {
         return binding.root
     } //<<<<<<<<<< end onCreate method <<<<<<<<<<
 
+    private fun fetchData() {
+        val retrofit = RetrofitInstance.getRetrofitInstance()
+        val apiService = retrofit.create(ApiInterface::class.java)
+
+        val call = apiService.getProfile()
+
+        call.enqueue(object : Callback<GetProfileModel?> {
+            override fun onResponse(
+                call: Call<GetProfileModel?>,
+                response: Response<GetProfileModel?>
+            ) {
+                if (response.isSuccessful) {
+                    val profileModel = response.body()
+                    val fullName = profileModel?.user?.fullName
+                    if (fullName != null) {
+                        Log.d("HomeFragment", "FullName from API: $fullName")
+                        binding.userFullName.text = fullName
+                        Log.d("HomeFragment", "FullName set to TextView: ${binding.userFullName.text}")
+                    } else {
+                        Log.d("HomeFragment", "No luck")
+                    }
+
+                    // Log the entire response body
+                    Log.d("HomeFragment", "Response Body: ${response.body()}")
+                } else {
+                    Log.d("$this@HomeFragment", "${response.errorBody()}")
+                }
+            }
+
+            override fun onFailure(call: Call<GetProfileModel?>, t: Throwable) {
+                Log.d("$this@HomeFragment", "${t.message}")
+            }
+        })
+    }
+
     //>>>>>>>>>> filtering method for search >>>>>>>>>>
     private fun filterList(query: String?) {
 
@@ -112,6 +154,8 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+//        fetchData()
 
 //        val btnsiti: Button = binding.btnSelengkapnyasiti
 //        btnsiti.setOnClickListener(this)
