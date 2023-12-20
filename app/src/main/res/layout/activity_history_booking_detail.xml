@@ -105,7 +105,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Waktu sesi"
+                android:text="@string/waktu"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />
@@ -160,7 +160,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Zona waktu mentor"
+                android:text="@string/zona_waktu_mentor"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />
@@ -202,7 +202,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Catatan anda"
+                android:text="@string/pertanyaan"
                 android:layout_marginTop="16dp"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
@@ -240,7 +240,7 @@
             android:layout_height="48dp"
             android:layout_gravity="bottom"
             android:background="@drawable/regular_button"
-            android:text="Booking Again"
+            android:text="@string/booking_lagi"
             android:textColor="@color/white"
             android:textStyle="bold"/>
     </LinearLayout>

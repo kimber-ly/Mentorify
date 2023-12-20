@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Details Pending"
+                android:text="Detail Pending"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -106,7 +106,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Session Time"
+                android:text="@string/waktu"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />
@@ -161,7 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Mentor Time Zone"
+                android:text="@string/zona_waktu_mentor"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />
@@ -178,7 +178,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Status pending"
+                android:text="@string/status_tertunda"
                 android:textColor="@color/md_theme_light_primary"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -197,7 +197,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Session Name"
+                android:text="@string/nama_sesi"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />
@@ -213,7 +213,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your Notes"
+                android:text="@string/pertanyaan"
                 android:layout_marginTop="16dp"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
@@ -230,7 +230,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Created : Sabtu, 17 November 2023 WIB"
+                android:text="Dibuat : Sabtu, 17 November 2023 WIB"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />

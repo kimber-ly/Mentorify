@@ -16,7 +16,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cari_mentor">Cari mentor</string>
-    <string name="mentorship_session_with">Mentorship session with</string>
+    <string name="mentorship_session_with">Sesi mentoring dengan</string>
+    <string name="kirim_ulasan">Kirim Ulasan</string>
+    <string name="rincian">Rincian</string>
+    <string name="gabung_rapat">Gabung rapat</string>
+    <string name="waktu">Waktu</string>
+    <string name="zona_waktu_mentor">Zona waktu mentor</string>
+    <string name="nama_sesi">Nama sesi</string>
+    <string name="pertanyaan">Pertanyaan</string>
+    <string name="rincian_akan_datang">Upcoming Detail</string>
+    <string name="status_tertunda">Status tertunda</string>
+    <string name="booking_lagi">Booking lagi</string>
 
     <string-array name="mentor_name">
         <item>Irfan Wahendra</item>

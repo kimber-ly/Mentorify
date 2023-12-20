@@ -113,7 +113,7 @@
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/regular_button"
                 android:enabled="false"
-                android:text="Meet Now"
+                android:text="@string/gabung_rapat"
                 android:textColor="@color/white" />
 
             <Button
@@ -123,7 +123,7 @@
                 android:layout_weight="1"
                 android:textSize="12sp"
                 android:background="@drawable/outlined_button"
-                android:text="Detail"
+                android:text="@string/rincian"
                 android:textColor="@color/md_theme_light_primary" />
         </LinearLayout>
 
